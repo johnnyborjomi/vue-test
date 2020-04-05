@@ -285,7 +285,7 @@ function Game(selector, data) {
 }
 
 var game;
-fetch("/which-hand-wins.json")
+fetch("/cards.json")
   .then((data) => data.json())
   .then((data) => {
     console.log(data);

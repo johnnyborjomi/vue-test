@@ -530,34 +530,6 @@ a:focus {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "icomoon";
-  src: url("/fonts/marketing/which-hand-wins/icomoon.eot?ehj4hv");
-  src: url("/fonts/marketing/which-hand-wins/icomoon.eot?ehj4hv#iefix")
-      format("embedded-opentype"),
-    url("/fonts/marketing/which-hand-wins/icomoon.ttf?ehj4hv")
-      format("truetype"),
-    url("/fonts/marketing/which-hand-wins/icomoon.woff?ehj4hv") format("woff"),
-    url("/fonts/marketing/which-hand-wins/icomoon.svg?ehj4hv#icomoon")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1; /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .icon-redo:before {
   content: "\f01e";
 }
@@ -1272,16 +1244,6 @@ a:focus {
   text-decoration: none;
 }
 
-.sources-drop__opener::after {
-  display: block;
-  font-family: "icomoon";
-  content: "\e901";
-  font-size: 13px;
-  line-height: 1;
-  text-decoration: none;
-  margin: 1px 0 0 10px;
-}
-
 .sources-drop__opener:hover,
 .sources-drop__opener:focus {
   text-decoration: none;
@@ -1347,21 +1309,7 @@ a:focus {
   overflow: hidden;
 }
 
-.top::after {
-  font-family: "icomoon";
-  content: "\e900";
-  font-size: 12px;
-  line-height: 1;
-  color: #000;
-  position: absolute;
-  display: block;
-  text-indent: 0;
-  top: 17px;
-  left: 17px;
-}
-
 body {
-  background: #0f1e21 url(/images/which-hand-wins/body-bg.jpg) no-repeat;
   background-size: 372% auto;
   background-position: 45.5% -60px;
 }

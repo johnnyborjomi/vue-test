@@ -1,0 +1,2023 @@
+[
+  {
+    "num": 1,
+    "hand1": ["a-heart", "10-heart"],
+    "hand2": ["j-clubs", "5-diamond"],
+    "hand3": ["4-spades", "9-diamond"],
+    "flop": ["k-heart", "q-heart", "j-heart"],
+    "turn": "9-spades",
+    "river": "2-clubs",
+    "win-hand-struct": ["a-heart", "k-heart", "q-heart", "j-heart", "10-heart"],
+    "win-hand-num": 1,
+    "type": "royal flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 2,
+    "hand1": ["9-spades", "6-spades"],
+    "hand2": ["a-diamond", "j-heart"],
+    "hand3": ["4-diamond", "9-clubs"],
+    "flop": ["8-spades", "7-spades", "4-heart"],
+    "turn": "6-spades",
+    "river": "2-clubs",
+    "win-hand-struct": ["a-heart", "k-heart", "q-heart", "j-heart", "10-heart"],
+    "win-hand-num": 1,
+    "type": "straight flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 3,
+    "hand1": ["7-heart", "a-clubs"],
+    "hand2": ["4-heart", "4-clubs"],
+    "hand3": ["k-diamond", "3-spades"],
+    "flop": ["j-heart", "4-diamond", "5-spades"],
+    "turn": "4-spades",
+    "river": "2-heart",
+    "win-hand-struct": [
+      "4-spades",
+      "4-diamond",
+      "4-heart",
+      "4-clubs",
+      "j-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "four of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 4,
+    "hand1": ["a-diamond", "a-spades"],
+    "hand2": ["10-diamond", "j-clubs"],
+    "hand3": ["2-spades", "3-heart"],
+    "flop": ["a-heart", "k-spades", "k-clubs"],
+    "turn": "3-clubs",
+    "river": "3-spades",
+    "win-hand-struct": [
+      "a-heart",
+      "a-spades",
+      "a-diamond",
+      "k-clubs",
+      "k-spades"
+    ],
+    "win-hand-num": 1,
+    "type": "full house",
+    "difficult": "easy"
+  },
+  {
+    "num": 5,
+    "hand1": ["k-diamond", "4-clubs"],
+    "hand2": ["3-diamond", "3-spades"],
+    "hand3": ["a-spades", "10-spades"],
+    "flop": ["7-spades", "6-heart", "6-spades"],
+    "turn": "2-spades",
+    "river": "5-diamond",
+    "win-hand-struct": [
+      "a-spades",
+      "10-spades",
+      "7-spades",
+      "6-spades",
+      "2-spades"
+    ],
+    "win-hand-num": 3,
+    "type": "high flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 6,
+    "hand1": ["k-diamond", "2-clubs"],
+    "hand2": ["5-clubs", "4-diamond"],
+    "hand3": ["j-spades", "8-clubs"],
+    "flop": ["a-heart", "3-spades", "2-heart"],
+    "turn": "10-clubs",
+    "river": "9-spades",
+    "win-hand-struct": [
+      "5-clubs",
+      "4-diamond",
+      "3-spades",
+      "2-heart",
+      "a-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "low straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 7,
+    "hand1": ["a-heart", "a-spades"],
+    "hand2": ["6-diamond", "j-clubs"],
+    "hand3": ["2-clubs", "k-spades"],
+    "flop": ["a-clubs", "k-diamond", "3-diamond"],
+    "turn": "4-spades",
+    "river": "9-diamond",
+    "win-hand-struct": [
+      "a-clubs",
+      "a-spades",
+      "a-heart",
+      "k-diamond",
+      "9-diamond"
+    ],
+    "win-hand-num": 1,
+    "type": "three of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 8,
+    "hand1": ["k-clubs", "3-diamond"],
+    "hand2": ["k-spades", "q-diamond"],
+    "hand3": ["10-clubs", "2-heart"],
+    "flop": ["8-heart", "3-spades", "a-spades"],
+    "turn": "a-heart",
+    "river": "k-heart",
+    "win-hand-struct": [
+      "a-heart",
+      "a-spades",
+      "k-heart",
+      "k-spades",
+      "q-diamond"
+    ],
+    "win-hand-num": 2,
+    "type": "two pair",
+    "difficult": "hard"
+  },
+  {
+    "num": 9,
+    "hand1": ["9-clubs", "6-diamond"],
+    "hand2": ["k-spades", "4-heart"],
+    "hand3": ["q-spades", "j-diamond"],
+    "flop": ["8-clubs", "a-heart", "a-clubs"],
+    "turn": "k-heart",
+    "river": "8-heart",
+    "win-hand-struct": ["a-clubs", "a-heart", "k-heart", "k-spades", "8-heart"],
+    "win-hand-num": 2,
+    "type": "two pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 10,
+    "hand1": ["10-clubs", "k-diamond"],
+    "hand2": ["q-heart", "3-spades"],
+    "hand3": ["10-spades", "7-spades"],
+    "flop": ["a-heart", "j-clubs", "5-heart"],
+    "turn": "9-spades",
+    "river": "a-clubs",
+    "win-hand-struct": [
+      "a-clubs",
+      "a-heart",
+      "k-diamond",
+      "j-clubs",
+      "10-clubs"
+    ],
+    "win-hand-num": 1,
+    "type": "one pair",
+    "difficult": "hard"
+  },
+  {
+    "num": 11,
+    "hand1": ["10-spades", "2-diamond"],
+    "hand2": ["k-clubs", "j-diamond"],
+    "hand3": ["9-heart", "a-heart"],
+    "flop": ["a-spades", "j-clubs", "3-clubs"],
+    "turn": "a-clubs",
+    "river": "5-diamond",
+    "win-hand-struct": ["a-clubs", "a-clubs", "a-heart", "j-clubs", "9-heart"],
+    "win-hand-num": 3,
+    "type": "three of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 12,
+    "hand1": ["j-heart", "9-clubs"],
+    "hand2": ["j-diamond", "a-diamond"],
+    "hand3": ["9-spades", "9-diamond"],
+    "flop": ["k-diamond", "j-clubs", "q-diamond"],
+    "turn": "6-clubs",
+    "river": "10-diamond",
+    "win-hand-struct": [
+      "a-diamond",
+      "k-diamond",
+      "q-diamond",
+      "j-diamond",
+      "10-diamond"
+    ],
+    "win-hand-num": 2,
+    "type": "royal flush",
+    "difficult": "hard"
+  },
+  {
+    "num": 13,
+    "hand1": ["q-clubs", "4-diamond"],
+    "hand2": ["8-diamond", "a-spades"],
+    "hand3": ["j-spades", "k-spades"],
+    "flop": ["4-clubs", "10-heart", "7-diamond"],
+    "turn": "3-spades",
+    "river": "k-heart",
+    "win-hand-struct": [
+      "k-heart",
+      "k-spades",
+      "j-spades",
+      "10-heart",
+      "7-diamond"
+    ],
+    "win-hand-num": 3,
+    "type": "one pair",
+    "difficult": "hard"
+  },
+  {
+    "num": 14,
+    "hand1": ["j-spades", "q-heart"],
+    "hand2": ["9-diamond", "4-spades"],
+    "hand3": ["10-clubs", "5-diamond"],
+    "flop": ["j-clubs", "6-diamond", "4-heart"],
+    "turn": "a-clubs",
+    "river": "10-heart",
+    "win-hand-struct": [
+      "j-clubs",
+      "j-spades",
+      "a-clubs",
+      "q-heart",
+      "10-heart"
+    ],
+    "win-hand-num": 1,
+    "type": "one pair",
+    "difficult": "hard"
+  },
+  {
+    "num": 15,
+    "hand1": ["9-heart", "q-clubs"],
+    "hand2": ["10-diamond", "6-spades"],
+    "hand3": ["7-spades", "10-spades"],
+    "flop": ["6-heart", "8-spades", "k-diamond"],
+    "turn": "9-spades",
+    "river": "j-spades",
+    "win-hand-struct": [
+      "j-spades",
+      "10-spades",
+      "9-spades",
+      "8-spades",
+      "7-spades"
+    ],
+    "win-hand-num": 3,
+    "type": "straight flush",
+    "difficult": "hard"
+  },
+  {
+    "num": 16,
+    "hand1": ["7-clubs", "10-diamond"],
+    "hand2": ["2-spades", "k-spades"],
+    "hand3": ["q-diamond", "a-diamond"],
+    "flop": ["k-diamond", "k-heart", "j-diamond"],
+    "turn": "5-spades",
+    "river": "k-clubs",
+    "win-hand-struct": [
+      "k-clubs",
+      "k-heart",
+      "k-diamond",
+      "5-spades",
+      "j-diamond"
+    ],
+    "win-hand-num": 2,
+    "type": "four of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 17,
+    "hand1": ["k-diamond", "a-diamond"],
+    "hand2": ["7-clubs", "j-diamond"],
+    "hand3": ["a-spades", "10-clubs"],
+    "flop": ["4-heart", "a-heart", "5-spades"],
+    "turn": "7-diamond",
+    "river": "k-clubs",
+    "win-hand-struct": [
+      "a-heart",
+      "a-diamond",
+      "k-clubs",
+      "k-diamond",
+      "7-diamond"
+    ],
+    "win-hand-num": 1,
+    "type": "two pair",
+    "difficult": "hard"
+  },
+  {
+    "num": 18,
+    "hand1": ["2-diamond", "q-clubs"],
+    "hand2": ["j-diamond", "10-heart"],
+    "hand3": ["5-spades", "a-heart"],
+    "flop": ["a-spades", "j-spades", "6-diamond"],
+    "turn": "j-heart",
+    "river": "q-heart",
+    "win-hand-struct": [
+      "j-heart",
+      "j-spades",
+      "j-diamond",
+      "a-spades",
+      "q-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "three of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 19,
+    "hand1": ["2-heart", "5-heart"],
+    "hand2": ["k-heart", "q-spades"],
+    "hand3": ["10-clubs", "j-diamond"],
+    "flop": ["4-heart", "6-spades", "3-heart"],
+    "turn": "q-diamond",
+    "river": "6-heart",
+    "win-hand-struct": ["6-heart", "5-heart", "4-heart", "3-heart", "2-heart"],
+    "win-hand-num": 1,
+    "type": "straight flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 20,
+    "hand1": ["k-clubs", "5-diamond"],
+    "hand2": ["10-heart", "k-heart"],
+    "hand3": ["a-spades", "a-diamond"],
+    "flop": ["k-spades", "3-heart", "j-spades"],
+    "turn": "q-diamond",
+    "river": "a-clubs",
+    "win-hand-struct": [
+      "a-clubs",
+      "k-spades",
+      "q-diamond",
+      "j-spades",
+      "10-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "high straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 21,
+    "hand1": ["8-clubs", "6-diamond"],
+    "hand2": ["9-heart", "q-heart"],
+    "hand3": ["10-spades", "j-heart"],
+    "flop": ["a-spades", "9-diamond", "q-spades"],
+    "turn": "4-clubs",
+    "river": "4-diamond",
+    "win-hand-struct": [
+      "q-spades",
+      "q-heart",
+      "9-diamond",
+      "9-heart",
+      "a-spades"
+    ],
+    "win-hand-num": 2,
+    "type": "two pair",
+    "difficult": "hard"
+  },
+  {
+    "num": 22,
+    "hand1": ["k-diamond", "10-spades"],
+    "hand2": ["j-clubs", "a-clubs"],
+    "hand3": ["6-heart", "q-spades"],
+    "flop": ["j-spades", "4-heart", "6-clubs"],
+    "turn": "k-spades",
+    "river": "a-spades",
+    "win-hand-struct": [
+      "a-spades",
+      "a-clubs",
+      "j-spades",
+      "j-clubs",
+      "k-spades"
+    ],
+    "win-hand-num": 2,
+    "type": "two pair",
+    "difficult": "hard"
+  },
+  {
+    "num": 23,
+    "hand1": ["4-diamond", "q-heart"],
+    "hand2": ["5-clubs", "a-spades"],
+    "hand3": ["k-spades", "10-spades"],
+    "flop": ["j-spades", "7-heart", "q-spades"],
+    "turn": "j-diamond",
+    "river": "9-spades",
+    "win-hand-struct": [
+      "k-spades",
+      "q-spades",
+      "j-spades",
+      "10-spades",
+      "9-spades"
+    ],
+    "win-hand-num": 3,
+    "type": "straight flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 24,
+    "hand1": ["2-diamond", "a-clubs"],
+    "hand2": ["9-heart", "k-diamond"],
+    "hand3": ["q-heart", "3-spades"],
+    "flop": ["a-spades", "5-heart", "k-spades"],
+    "turn": "7-diamond",
+    "river": "k-clubs",
+    "win-hand-struct": [
+      "k-clubs",
+      "k-spades",
+      "k-diamond",
+      "a-spades",
+      "9-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "three of a kind",
+    "difficult": "hard"
+  },
+  {
+    "num": 25,
+    "hand1": ["8-heart", "7-clubs"],
+    "hand2": ["4-diamond", "10-spades"],
+    "hand3": ["q-heart", "7-spades"],
+    "flop": ["j-spades", "6-diamond", "3-clubs"],
+    "turn": "2-heart",
+    "river": "a-heart",
+    "win-hand-struct": [
+      "a-heart",
+      "q-heart",
+      "j-spades",
+      "7-spades",
+      "6-diamond"
+    ],
+    "win-hand-num": 3,
+    "type": "high card",
+    "difficult": "easy"
+  },
+  {
+    "num": 26,
+    "hand1": ["4-clubs", "3-heart"],
+    "hand2": ["5-diamond", "a-heart"],
+    "hand3": ["4-spades", "q-spades"],
+    "flop": ["3-spades", "7-diamond", "4-heart"],
+    "turn": "q-clubs",
+    "river": "10-diamond",
+    "win-hand-struct": [
+      "q-clubs",
+      "q-spades",
+      "4-heart",
+      "4-spades",
+      "10-diamond"
+    ],
+    "win-hand-num": 3,
+    "type": "two pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 27,
+    "hand1": ["q-clubs", "5-diamond"],
+    "hand2": ["9-heart", "a-clubs"],
+    "hand3": ["10-spades", "7-spades"],
+    "flop": ["4-diamond", "7-heart", "k-heart"],
+    "turn": "3-clubs",
+    "river": "2-spades",
+    "win-hand-struct": [
+      "7-heart",
+      "7-spades",
+      "k-heart",
+      "10-spades",
+      "4-diamond"
+    ],
+    "win-hand-num": 3,
+    "type": "one pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 28,
+    "hand1": ["9-heart", "10-clubs"],
+    "hand2": ["j-diamond", "2-spades"],
+    "hand3": ["10-spades", "7-heart"],
+    "flop": ["a-clubs", "4-heart", "6-spades"],
+    "turn": "6-heart",
+    "river": "5-heart",
+    "win-hand-struct": [
+      "6-heart",
+      "6-spades",
+      "a-clubs",
+      "j-diamond",
+      "5-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "one pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 29,
+    "hand1": ["5-clubs", "10-clubs"],
+    "hand2": ["k-diamond", "5-spades"],
+    "hand3": ["4-heart", "a-diamond"],
+    "flop": ["6-diamond", "3-clubs", "7-clubs"],
+    "turn": "10-diamond",
+    "river": "a-clubs",
+    "win-hand-struct": ["a-clubs", "10-clubs", "7-clubs", "5-clubs", "3-clubs"],
+    "win-hand-num": 1,
+    "type": "high hlush",
+    "difficult": "easy"
+  },
+  {
+    "num": 30,
+    "hand1": ["j-clubs", "8-diamond"],
+    "hand2": ["2-heart", "4-spades"],
+    "hand3": ["a-clubs", "7-diamond"],
+    "flop": ["3-clubs", "q-diamond", "5-heart"],
+    "turn": "6-spades",
+    "river": "9-heart",
+    "win-hand-struct": [
+      "6-spades",
+      "5-heart",
+      "4-spades",
+      "3-clubs",
+      "2-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "low straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 31,
+    "hand1": ["a-heart", "9-clubs"],
+    "hand2": ["8-diamond", "q-spades"],
+    "hand3": ["q-diamond", "q-heart"],
+    "flop": ["7-clubs", "q-clubs", "10-diamond"],
+    "turn": "10-spades",
+    "river": "2-clubs",
+    "win-hand-struct": [
+      "q-clubs",
+      "q-heart",
+      "q-diamond",
+      "10-spades",
+      "10-diamond"
+    ],
+    "win-hand-num": 3,
+    "type": "full house",
+    "difficult": "easy"
+  },
+  {
+    "num": 32,
+    "hand1": ["10-clubs", "a-clubs"],
+    "hand2": ["5-heart", "5-spades"],
+    "hand3": ["k-spades", "j-heart"],
+    "flop": ["k-clubs", "5-diamond", "j-clubs"],
+    "turn": "4-heart",
+    "river": "q-clubs",
+    "win-hand-struct": ["a-clubs", "k-clubs", "q-clubs", "j-clubs", "10-clubs"],
+    "win-hand-num": 1,
+    "type": "royal flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 33,
+    "hand1": ["2-spades", "q-heart"],
+    "hand2": ["4-heart", "6-heart"],
+    "hand3": ["a-diamond", "10-clubs"],
+    "flop": ["3-heart", "10-spades", "7-heart"],
+    "turn": "k-spades",
+    "river": "5-heart",
+    "win-hand-struct": ["7-heart", "6-heart", "5-heart", "4-heart", "3-heart"],
+    "win-hand-num": 2,
+    "type": "straight flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 34,
+    "hand1": ["a-heart", "a-diamond"],
+    "hand2": ["j-diamond", "8-heart"],
+    "hand3": ["9-clubs", "10-heart"],
+    "flop": ["k-heart", "10-clubs", "q-clubs"],
+    "turn": "9-heart",
+    "river": "k-diamond",
+    "win-hand-struct": [
+      "k-diamond",
+      "q-clubs",
+      "j-diamond",
+      "10-clubs",
+      "9-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "high straight",
+    "difficult": "hard"
+  },
+  {
+    "num": 35,
+    "hand1": ["a-heart", "j-spades"],
+    "hand2": ["a-clubs", "q-clubs"],
+    "hand3": ["j-diamond", "q-diamond"],
+    "flop": ["k-clubs", "10-clubs", "k-diamond"],
+    "turn": "j-heart",
+    "river": "j-clubs",
+    "win-hand-struct": ["a-clubs", "k-clubs", "q-clubs", "j-clubs", "10-clubs"],
+    "win-hand-num": 2,
+    "type": "royal flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 36,
+    "hand1": ["2-diamond", "q-diamond"],
+    "hand2": ["a-diamond", "a-clubs"],
+    "hand3": ["8-spades", "8-clubs"],
+    "flop": ["3-diamond", "6-diamond", "8-diamond"],
+    "turn": "j-diamond",
+    "river": "k-diamond",
+    "win-hand-struct": [
+      "a-diamond",
+      "k-diamond",
+      "j-diamond",
+      "8-diamond",
+      "6-diamond"
+    ],
+    "win-hand-num": 2,
+    "type": "high flush",
+    "difficult": "hard"
+  },
+  {
+    "num": 37,
+    "hand1": ["10-heart", "2-spades"],
+    "hand2": ["6-clubs", "a-diamond"],
+    "hand3": ["6-spades", "4-spades"],
+    "flop": ["k-heart", "10-clubs", "q-clubs"],
+    "turn": "8-diamond",
+    "river": "8-heart",
+    "win-hand-struct": [
+      "10-clubs",
+      "10-heart",
+      "8-diamond",
+      "8-heart",
+      "k-heart"
+    ],
+    "win-hand-num": 1,
+    "type": "two pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 38,
+    "hand1": ["a-clubs", "q-clubs"],
+    "hand2": ["6-diamond", "7-diamond"],
+    "hand3": ["7-clubs", "8-clubs"],
+    "flop": ["4-clubs", "6-heart", "6-clubs"],
+    "turn": "9-heart",
+    "river": "10-clubs",
+    "win-hand-struct": ["a-clubs", "q-clubs", "10-clubs", "6-clubs", "4-clubs"],
+    "win-hand-num": 1,
+    "type": "high flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 39,
+    "hand1": ["a-spades", "k-heart"],
+    "hand2": ["5-heart", "7-heart"],
+    "hand3": ["3-clubs", "5-clubs"],
+    "flop": ["4-clubs", "6-spades", "8-clubs"],
+    "turn": "a-heart",
+    "river": "a-clubs",
+    "win-hand-struct": ["a-clubs", "8-clubs", "5-clubs", "4-clubs", "3-clubs"],
+    "win-hand-num": 3,
+    "type": "flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 40,
+    "hand1": ["9-diamond", "7-diamond"],
+    "hand2": ["10-spades", "k-diamond"],
+    "hand3": ["a-heart", "8-heart"],
+    "flop": ["a-clubs", "10-heart", "8-diamond"],
+    "turn": "k-heart",
+    "river": "6-spades",
+    "win-hand-struct": [
+      "10-heart",
+      "9-diamond",
+      "8-diamond",
+      "7-diamond",
+      "6-spades"
+    ],
+    "win-hand-num": 1,
+    "type": "straight",
+    "difficult": "hard"
+  },
+  {
+    "num": 41,
+    "hand1": ["9-diamond", "4-diamond"],
+    "hand2": ["7-heart", "5-spades"],
+    "hand3": ["9-heart", "k-clubs"],
+    "flop": ["a-diamond", "7-clubs", "3-heart"],
+    "turn": "j-diamond",
+    "river": "q-spades",
+    "win-hand-struct": [
+      "7-clubs",
+      "7-heart",
+      "a-diamond",
+      "q-spades",
+      "j-diamond"
+    ],
+    "win-hand-num": 2,
+    "type": "one pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 42,
+    "hand1": ["q-spades", "q-heart"],
+    "hand2": ["5-diamond", "7-diamond"],
+    "hand3": ["4-spades", "a-clubs"],
+    "flop": ["a-diamond", "9-spades", "4-diamond"],
+    "turn": "j-heart",
+    "river": "q-diamond",
+    "win-hand-struct": [
+      "a-diamond",
+      "q-diamond",
+      "7-diamond",
+      "5-diamond",
+      "4-diamond"
+    ],
+    "win-hand-num": 2,
+    "type": "high flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 43,
+    "hand1": ["10-heart", "k-spades"],
+    "hand2": ["6-clubs", "4-diamond"],
+    "hand3": ["q-clubs", "j-clubs"],
+    "flop": ["6-diamond", "9-heart", "9-clubs"],
+    "turn": "10-clubs",
+    "river": "6-spades",
+    "win-hand-struct": [
+      "6-spades",
+      "6-diamond",
+      "6-spades",
+      "9-clubs",
+      "9-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "full house",
+    "difficult": "easy"
+  },
+  {
+    "num": 44,
+    "hand1": ["k-heart", "6-diamond"],
+    "hand2": ["9-clubs", "k-diamond"],
+    "hand3": ["5-heart", "a-spades"],
+    "flop": ["2-heart", "7-clubs", "q-heart"],
+    "turn": "8-diamond",
+    "river": "4-heart",
+    "win-hand-struct": [
+      "a-spades",
+      "q-heart",
+      "8-diamond",
+      "7-clubs",
+      "5-heart"
+    ],
+    "win-hand-num": 3,
+    "type": "high card",
+    "difficult": "easy"
+  },
+  {
+    "num": 45,
+    "hand1": ["7-clubs", "k-clubs"],
+    "hand2": ["j-heart", "j-spades"],
+    "hand3": ["9-spades", "2-heart"],
+    "flop": ["6-spades", "9-clubs", "4-clubs"],
+    "turn": "q-heart",
+    "river": "9-diamond",
+    "win-hand-struct": [
+      "9-diamond",
+      "9-clubs",
+      "9-spades",
+      "q-heart",
+      "6-spades"
+    ],
+    "win-hand-num": 3,
+    "type": "three of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 46,
+    "hand1": ["k-spades", "9-spades"],
+    "hand2": ["a-heart", "4-clubs"],
+    "hand3": ["a-clubs", "10-spades"],
+    "flop": ["a-spades", "a-diamond", "j-spades"],
+    "turn": "q-spades",
+    "river": "10-heart",
+    "win-hand-struct": [
+      "a-diamond",
+      "a-spades",
+      "a-clubs",
+      "10-heart",
+      "10-spades"
+    ],
+    "win-hand-num": 3,
+    "type": "full house",
+    "difficult": "easy"
+  },
+  {
+    "num": 47,
+    "hand1": ["10-spades", "4-diamond"],
+    "hand2": ["j-clubs", "k-clubs"],
+    "hand3": ["8-diamond", "8-heart"],
+    "flop": ["2-heart", "2-spades", "9-diamond"],
+    "turn": "a-spades",
+    "river": "10-heart",
+    "win-hand-struct": [
+      "10-heart",
+      "10-spades",
+      "2-spades",
+      "2-heart",
+      "a-spades"
+    ],
+    "win-hand-num": 1,
+    "type": "two pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 48,
+    "hand1": ["k-heart", "9-spades"],
+    "hand2": ["k-diamond", "2-diamond"],
+    "hand3": ["10-spades", "9-clubs"],
+    "flop": ["5-spades", "9-diamond", "10-heart"],
+    "turn": "2-clubs",
+    "river": "k-clubs",
+    "win-hand-struct": [
+      "k-clubs",
+      "k-heart",
+      "9-diamond",
+      "9-spades",
+      "10-heart"
+    ],
+    "win-hand-num": 1,
+    "type": "two pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 49,
+    "hand1": ["2-spades", "2-clubs"],
+    "hand2": ["10-clubs", "3-heart"],
+    "hand3": ["2-heart", "6-clubs"],
+    "flop": ["8-heart", "8-spades", "2-diamond"],
+    "turn": "8-diamond",
+    "river": "8-clubs",
+    "win-hand-struct": [
+      "8-clubs",
+      "8-diamond",
+      "8-spades",
+      "8-heart",
+      "10-clubs"
+    ],
+    "win-hand-num": 2,
+    "type": "four of a kind",
+    "difficult": "hard"
+  },
+  {
+    "num": 50,
+    "hand1": ["k-spades", "k-diamond"],
+    "hand2": ["j-diamond", "5-spades"],
+    "hand3": ["4-heart", "8-spades"],
+    "flop": ["5-clubs", "5-clubs", "7-diamond"],
+    "turn": "6-heart",
+    "river": "k-clubs",
+    "win-hand-struct": [
+      "8-spades",
+      "7-diamond",
+      "6-heart",
+      "5-clubs",
+      "4-heart"
+    ],
+    "win-hand-num": 3,
+    "type": "straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 51,
+    "hand1": ["10-heart", "10-spades"],
+    "hand2": ["a-diamond", "2-diamond"],
+    "hand3": ["5-diamond", "8-diamond"],
+    "flop": ["7-diamond", "4-spades", "6-diamond"],
+    "turn": "10-clubs",
+    "river": "9-diamond",
+    "win-hand-struct": [
+      "9-diamond",
+      "8-diamond",
+      "7-diamond",
+      "6-diamond",
+      "5-diamond"
+    ],
+    "win-hand-num": 3,
+    "type": "straight flush",
+    "difficult": "hard"
+  },
+  {
+    "num": 52,
+    "hand1": ["a-heart", "7-diamond"],
+    "hand2": ["10-spades", "3-clubs"],
+    "hand3": ["3-heart", "9-heart"],
+    "flop": ["q-clubs", "8-clubs", "j-spades"],
+    "turn": "j-clubs",
+    "river": "6-heart",
+    "win-hand-struct": ["j-clubs", "j-spades", "a-heart", "q-clubs", "8-clubs"],
+    "win-hand-num": 1,
+    "type": "one pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 53,
+    "hand1": ["3-diamond", "5-diamond"],
+    "hand2": ["a-diamond", "4-diamond"],
+    "hand3": ["10-heart", "a-heart"],
+    "flop": ["2-spades", "8-diamond", "5-heart"],
+    "turn": "9-heart",
+    "river": "5-spades",
+    "win-hand-struct": [
+      "5-spades",
+      "5-heart",
+      "5-diamond",
+      "9-heart",
+      "8-diamond"
+    ],
+    "win-hand-num": 1,
+    "type": "three of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 54,
+    "hand1": ["a-spades", "2-clubs"],
+    "hand2": ["8-heart", "j-heart"],
+    "hand3": ["a-diamond", "a-clubs"],
+    "flop": ["5-spades", "10-heart", "4-diamond"],
+    "turn": "9-heart",
+    "river": "7-heart",
+    "win-hand-struct": ["j-heart", "10-heart", "9-heart", "8-heart", "7-heart"],
+    "win-hand-num": 2,
+    "type": "straight flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 55,
+    "hand1": ["8-clubs", "q-heart"],
+    "hand2": ["3-diamond", "2-spades"],
+    "hand3": ["a-diamond", "k-heart"],
+    "flop": ["q-clubs", "4-clubs", "5-heart"],
+    "turn": "k-clubs",
+    "river": "6-diamond",
+    "win-hand-struct": [
+      "6-diamond",
+      "5-heart",
+      "4-clubs",
+      "3-diamond",
+      "2-spades"
+    ],
+    "win-hand-num": 2,
+    "type": "low straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 56,
+    "hand1": ["q-diamond", "j-diamond"],
+    "hand2": ["3-clubs", "3-spades"],
+    "hand3": ["q-heart", "a-heart"],
+    "flop": ["10-diamond", "10-heart", "a-spades"],
+    "turn": "5-spades",
+    "river": "3-diamond",
+    "win-hand-struct": [
+      "3-diamond",
+      "3-spades",
+      "3-clubs",
+      "10-heart",
+      "10-diamond"
+    ],
+    "win-hand-num": 2,
+    "type": "full house",
+    "difficult": "hard"
+  },
+  {
+    "num": 57,
+    "hand1": ["a-clubs", "3-diamond"],
+    "hand2": ["10-diamond", "q-diamond"],
+    "hand3": ["9-heart", "9-clubs"],
+    "flop": ["5-heart", "k-spades", "5-spades"],
+    "turn": "9-diamond",
+    "river": "a-spades",
+    "win-hand-struct": [
+      "9-diamond",
+      "9-clubs",
+      "9-heart",
+      "5-spades",
+      "5-heart"
+    ],
+    "win-hand-num": 3,
+    "type": "full house",
+    "difficult": "hard"
+  },
+  {
+    "num": 58,
+    "hand1": ["4-diamond", "k-clubs"],
+    "hand2": ["a-diamond", "a-heart"],
+    "hand3": ["j-heart", "q-diamond"],
+    "flop": ["k-heart", "a-clubs", "9-clubs"],
+    "turn": "6-diamond",
+    "river": "10-heart",
+    "win-hand-struct": [
+      "a-clubs",
+      "k-heart",
+      "q-diamond",
+      "j-heart",
+      "10-heart"
+    ],
+    "win-hand-num": 3,
+    "type": "high straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 59,
+    "hand1": ["7-clubs", "7-diamond"],
+    "hand2": ["10-diamond", "a-spades"],
+    "hand3": ["4-heart", "8-heart"],
+    "flop": ["4-clubs", "10-spades", "q-clubs"],
+    "turn": "q-heart",
+    "river": "k-diamond",
+    "win-hand-struct": [
+      "q-heart",
+      "q-clubs",
+      "10-spades",
+      "10-diamond",
+      "a-spades"
+    ],
+    "win-hand-num": 2,
+    "type": "two pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 60,
+    "hand1": ["8-heart", "9-clubs"],
+    "hand2": ["4-heart", "a-diamond"],
+    "hand3": ["a-clubs", "k-clubs"],
+    "flop": ["5-diamond", "q-heart", "7-spades"],
+    "turn": "a-spades",
+    "river": "6-clubs",
+    "win-hand-struct": [
+      "9-clubs",
+      "8-heart",
+      "7-spades",
+      "6-clubs",
+      "5-diamond"
+    ],
+    "win-hand-num": 1,
+    "type": "straight",
+    "difficult": "hard"
+  },
+  {
+    "num": 61,
+    "hand1": ["a-spades", "10-spades"],
+    "hand2": ["q-heart", "2-clubs"],
+    "hand3": ["10-clubs", "10-diamond"],
+    "flop": ["k-spades", "8-heart", "j-spades"],
+    "turn": "6-clubs",
+    "river": "q-spades",
+    "win-hand-struct": [
+      "a-spades",
+      "k-spades",
+      "q-spades",
+      "j-spades",
+      "10-spades"
+    ],
+    "win-hand-num": 1,
+    "type": "royal flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 62,
+    "hand1": ["10-spades", "a-heart"],
+    "hand2": ["3-diamond", "a-clubs"],
+    "hand3": ["4-heart", "4-diamond"],
+    "flop": ["j-clubs", "5-diamond", "q-heart"],
+    "turn": "3-spades",
+    "river": "k-spades",
+    "win-hand-struct": [
+      "a-heart",
+      "k-spades",
+      "q-heart",
+      "j-clubs",
+      "10-spades"
+    ],
+    "win-hand-num": 1,
+    "type": "high straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 63,
+    "hand1": ["6-clubs", "6-spades"],
+    "hand2": ["7-heart", "8-spades"],
+    "hand3": ["4-diamond", "a-diamond"],
+    "flop": ["8-clubs", "6-diamond", "10-spades"],
+    "turn": "7-spades",
+    "river": "9-clubs",
+    "win-hand-struct": [
+      "10-spades",
+      "9-clubs",
+      "8-clubs",
+      "7-spades",
+      "6-diamond"
+    ],
+    "win-hand-num": [1, 2, 3],
+    "type": "split pot \"tie\" straight",
+    "difficult": "hard"
+  },
+  {
+    "num": 64,
+    "hand1": ["j-spades", "9-spades"],
+    "hand2": ["j-diamond", "2-diamond"],
+    "hand3": ["k-heart", "5-heart"],
+    "flop": ["9-heart", "j-clubs", "10-clubs"],
+    "turn": "a-diamond",
+    "river": "a-spades",
+    "win-hand-struct": [
+      "a-spades",
+      "a-diamond",
+      "j-clubs",
+      "j-diamond",
+      "j-spades"
+    ],
+    "win-hand-num": [1, 2],
+    "type": "split pot \"tie\"",
+    "difficult": "hard"
+  },
+  {
+    "num": 65,
+    "hand1": ["9-diamond", "6-diamond"],
+    "hand2": ["9-heart", "9-spades"],
+    "hand3": ["j-heart", "10-diamond"],
+    "flop": ["j-diamond", "2-clubs", "6-clubs"],
+    "turn": "6-spades",
+    "river": "6-spades",
+    "win-hand-struct": [
+      "6-spades",
+      "6-spades",
+      "6-clubs",
+      "6-diamond",
+      "j-diamond"
+    ],
+    "win-hand-num": 1,
+    "type": "four of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 66,
+    "hand1": ["j-clubs", "9-diamond"],
+    "hand2": ["q-heart", "10-heart"],
+    "hand3": ["5-clubs", "10-spades"],
+    "flop": ["8-spades", "3-diamond", "4-heart"],
+    "turn": "8-spades",
+    "river": "2-spades",
+    "win-hand-struct": [
+      "q-heart",
+      "10-heart",
+      "8-spades",
+      "8-spades",
+      "4-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "high card",
+    "difficult": "easy"
+  },
+  {
+    "num": 67,
+    "hand1": ["q-heart", "j-diamond"],
+    "hand2": ["9-clubs", "9-heart"],
+    "hand3": ["j-clubs", "j-spades"],
+    "flop": ["j-heart", "q-spades", "9-diamond"],
+    "turn": "k-heart",
+    "river": "10-spades",
+    "win-hand-struct": [
+      "k-heart",
+      "q-spades",
+      "j-heart",
+      "10-spades",
+      "9-diamond"
+    ],
+    "win-hand-num": [1, 2, 3],
+    "type": "split pot \"tie\" straight",
+    "difficult": "hard"
+  },
+  {
+    "num": 68,
+    "hand1": ["2-clubs", "9-heart"],
+    "hand2": ["6-diamond", "5-spades"],
+    "hand3": ["j-clubs", "k-spades"],
+    "flop": ["j-diamond", "6-spades", "9-clubs"],
+    "turn": "5-heart",
+    "river": "9-diamond",
+    "win-hand-struct": [
+      "9-diamond",
+      "9-clubs",
+      "9-heart",
+      "j-diamond",
+      "6-spades"
+    ],
+    "win-hand-num": 1,
+    "type": "three of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 69,
+    "hand1": ["j-diamond", "4-heart"],
+    "hand2": ["q-clubs", "a-clubs"],
+    "hand3": ["k-heart", "4-clubs"],
+    "flop": ["a-spades", "j-heart", "4-diamond"],
+    "turn": "q-spades",
+    "river": "k-clubs",
+    "win-hand-struct": [
+      "a-spades",
+      "a-clubs",
+      "q-spades",
+      "q-clubs",
+      "k-clubs"
+    ],
+    "win-hand-num": 2,
+    "type": "two pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 70,
+    "hand1": ["8-clubs", "8-spades"],
+    "hand2": ["k-diamond", "4-spades"],
+    "hand3": ["10-spades", "a-spades"],
+    "flop": ["4-diamond", "8-diamond", "5-heart"],
+    "turn": "q-clubs",
+    "river": "a-clubs",
+    "win-hand-struct": [
+      "8-diamond",
+      "8-spades",
+      "8-clubs",
+      "a-clubs",
+      "q-clubs"
+    ],
+    "win-hand-num": 1,
+    "type": "three of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 71,
+    "hand1": ["k-spades", "a-clubs"],
+    "hand2": ["5-heart", "2-clubs"],
+    "hand3": ["10-heart", "10-clubs"],
+    "flop": ["k-diamond", "10-spades", "2-heart"],
+    "turn": "5-diamond",
+    "river": "5-spades",
+    "win-hand-struct": [
+      "10-spades",
+      "10-clubs",
+      "10-heart",
+      "5-spades",
+      "5-diamond"
+    ],
+    "win-hand-num": 3,
+    "type": "full house",
+    "difficult": "easy"
+  },
+  {
+    "num": 72,
+    "hand1": ["10-clubs", "5-diamond"],
+    "hand2": ["6-spades", "a-clubs"],
+    "hand3": ["k-spades", "k-diamond"],
+    "flop": ["q-heart", "2-clubs", "9-heart"],
+    "turn": "9-spades",
+    "river": "a-diamond",
+    "win-hand-struct": [
+      "a-diamond",
+      "a-clubs",
+      "9-heart",
+      "9-spades",
+      "q-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "two pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 73,
+    "hand1": ["8-spades", "8-heart"],
+    "hand2": ["4-diamond", "4-clubs"],
+    "hand3": ["3-clubs", "a-heart"],
+    "flop": ["8-diamond", "4-heart", "3-heart"],
+    "turn": "2-spades",
+    "river": "4-spades",
+    "win-hand-struct": [
+      "4-spades",
+      "4-heart",
+      "4-clubs",
+      "4-diamond",
+      "8-diamond"
+    ],
+    "win-hand-num": 2,
+    "type": "four of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 74,
+    "hand1": ["8-heart", "7-clubs"],
+    "hand2": ["4-diamond", "q-spades"],
+    "hand3": ["10-diamond", "8-spades"],
+    "flop": ["a-diamond", "j-heart", "3-clubs"],
+    "turn": "a-heart",
+    "river": "2-diamond",
+    "win-hand-struct": [
+      "a-heart",
+      "a-diamond",
+      "q-spades",
+      "j-heart",
+      "4-diamond"
+    ],
+    "win-hand-num": 2,
+    "type": "one pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 75,
+    "hand1": ["4-clubs", "a-heart"],
+    "hand2": ["j-diamond", "j-clubs"],
+    "hand3": ["a-clubs", "8-heart"],
+    "flop": ["3-diamond", "a-spades", "5-clubs"],
+    "turn": "j-spades",
+    "river": "2-heart",
+    "win-hand-struct": [
+      "5-clubs",
+      "4-clubs",
+      "3-diamond",
+      "2-heart",
+      "a-spades"
+    ],
+    "win-hand-num": 1,
+    "type": "straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 76,
+    "hand1": ["j-spades", "a-spades"],
+    "hand2": ["j-heart", "a-diamond"],
+    "hand3": ["q-spades", "q-clubs"],
+    "flop": ["9-diamond", "5-spades", "j-diamond"],
+    "turn": "10-clubs",
+    "river": "9-heart",
+    "win-hand-struct": [
+      "q-clubs",
+      "q-spades",
+      "9-heart",
+      "9-diamond",
+      "j-diamond"
+    ],
+    "win-hand-num": 3,
+    "type": "two pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 77,
+    "hand1": ["4-heart", "3-heart"],
+    "hand2": ["5-diamond", "7-clubs"],
+    "hand3": ["9-spades", "a-spades"],
+    "flop": ["q-diamond", "10-clubs", "k-clubs"],
+    "turn": "j-spades",
+    "river": "2-clubs",
+    "win-hand-struct": [
+      "a-spades",
+      "k-clubs",
+      "q-diamond",
+      "j-spades",
+      "10-clubs"
+    ],
+    "win-hand-num": 3,
+    "type": "high straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 78,
+    "hand1": ["5-clubs", "5-spades"],
+    "hand2": ["a-diamond", "4-spades"],
+    "hand3": ["k-clubs", "9-diamond"],
+    "flop": ["a-heart", "k-spades", "j-diamond"],
+    "turn": "3-diamond",
+    "river": "9-heart",
+    "win-hand-struct": [
+      "k-spades",
+      "k-clubs",
+      "9-heart",
+      "9-diamond",
+      "a-heart"
+    ],
+    "win-hand-num": 3,
+    "type": "two pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 79,
+    "hand1": ["a-spades", "a-clubs"],
+    "hand2": ["7-diamond", "4-spades"],
+    "hand3": ["k-heart", "a-diamond"],
+    "flop": ["8-diamond", "q-spades", "6-clubs"],
+    "turn": "a-heart",
+    "river": "5-spades",
+    "win-hand-struct": [
+      "8-diamond",
+      "7-diamond",
+      "6-clubs",
+      "5-spades",
+      "4-spades"
+    ],
+    "win-hand-num": 2,
+    "type": "straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 80,
+    "hand1": ["7-clubs", "k-spades"],
+    "hand2": ["5-heart", "8-heart"],
+    "hand3": ["4-diamond", "a-diamond"],
+    "flop": ["10-spades", "q-clubs", "2-heart"],
+    "turn": "6-spades",
+    "river": "7-diamond",
+    "win-hand-struct": [
+      "7-diamond",
+      "7-clubs",
+      "k-spades",
+      "q-clubs",
+      "10-spades"
+    ],
+    "win-hand-num": 1,
+    "type": "one pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 81,
+    "hand1": ["a-clubs", "10-diamond"],
+    "hand2": ["6-spades", "q-clubs"],
+    "hand3": ["9-spades", "a-diamond"],
+    "flop": ["k-spades", "2-clubs", "q-heart"],
+    "turn": "2-spades",
+    "river": "a-heart",
+    "win-hand-struct": [
+      "a-heart",
+      "a-clubs",
+      "2-spades",
+      "2-clubs",
+      "k-spades"
+    ],
+    "win-hand-num": [1, 3],
+    "type": "split pot \"tie\" two pair",
+    "difficult": "hard"
+  },
+  {
+    "num": 82,
+    "hand1": ["8-clubs", "j-clubs"],
+    "hand2": ["6-heart", "9-diamond"],
+    "hand3": ["2-heart", "4-spades"],
+    "flop": ["7-clubs", "q-clubs", "a-clubs"],
+    "turn": "3-heart",
+    "river": "q-spades",
+    "win-hand-struct": ["a-clubs", "q-clubs", "j-clubs", "8-clubs", "7-clubs"],
+    "win-hand-num": 1,
+    "type": "high flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 83,
+    "hand1": ["5-heart", "q-clubs"],
+    "hand2": ["4-spades", "a-diamond"],
+    "hand3": ["2-clubs", "a-spades"],
+    "flop": ["7-diamond", "2-spades", "6-clubs"],
+    "turn": "j-diamond",
+    "river": "q-spades",
+    "win-hand-struct": [
+      "q-spades",
+      "q-clubs",
+      "j-diamond",
+      "7-diamond",
+      "6-clubs"
+    ],
+    "win-hand-num": 1,
+    "type": "one pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 84,
+    "hand1": ["7-diamond", "8-clubs"],
+    "hand2": ["a-clubs", "j-clubs"],
+    "hand3": ["a-heart", "a-diamond"],
+    "flop": ["j-diamond", "10-clubs", "k-diamond"],
+    "turn": "k-clubs",
+    "river": "q-clubs",
+    "win-hand-struct": ["a-clubs", "k-clubs", "q-clubs", "j-clubs", "10-clubs"],
+    "win-hand-num": 2,
+    "type": "royal flush",
+    "difficult": "hard"
+  },
+  {
+    "num": 85,
+    "hand1": ["", ""],
+    "hand2": ["", ""],
+    "hand3": ["", ""],
+    "flop": ["", "", ""],
+    "turn": "",
+    "river": "",
+    "win-hand-struct": ["", "", "", "", ""],
+    "win-hand-num": 1,
+    "type": "royal flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 3,
+    "hand1": ["2-diamond", "7-clubs"],
+    "hand2": ["10-heart", "a-diamond"],
+    "hand3": ["q-spades", "6-diamond"],
+    "flop": ["7-diamond", "4-spades", "a-heart"],
+    "turn": "2-clubs",
+    "river": "7-heart",
+    "win-hand-struct": [
+      "7-heart",
+      "7-diamond",
+      "7-clubs",
+      "2-clubs",
+      "2-diamond"
+    ],
+    "win-hand-num": 1,
+    "type": "full house",
+    "difficult": "easy"
+  },
+  {
+    "num": 86,
+    "hand1": ["k-diamond", "k-clubs"],
+    "hand2": ["a-clubs", "a-heart"],
+    "hand3": ["6-heart", "6-clubs"],
+    "flop": ["q-clubs", "k-spades", "9-diamond"],
+    "turn": "6-diamond",
+    "river": "6-spades",
+    "win-hand-struct": [
+      "6-spades",
+      "6-diamond",
+      "6-clubs",
+      "6-heart",
+      "k-spades"
+    ],
+    "win-hand-num": 3,
+    "type": "four of a kind",
+    "difficult": "hard"
+  },
+  {
+    "num": 87,
+    "hand1": ["4-diamond", "7-diamond"],
+    "hand2": ["10-diamond", "10-clubs"],
+    "hand3": ["q-heart", "k-heart"],
+    "flop": ["5-diamond", "6-diamond", "10-heart"],
+    "turn": "10-spades",
+    "river": "8-diamond",
+    "win-hand-struct": [
+      "8-diamond",
+      "7-diamond",
+      "6-diamond",
+      "5-diamond",
+      "4-diamond"
+    ],
+    "win-hand-num": 1,
+    "type": "straight flush",
+    "difficult": "hard"
+  },
+  {
+    "num": 88,
+    "hand1": ["2-clubs", "2-heart"],
+    "hand2": ["a-heart", "a-spades"],
+    "hand3": ["j-heart", "j-spades"],
+    "flop": ["a-diamond", "j-clubs", "j-diamond"],
+    "turn": "2-diamond",
+    "river": "2-spades",
+    "win-hand-struct": [
+      "j-diamond",
+      "j-clubs",
+      "j-spades",
+      "j-heart",
+      "a-diamond"
+    ],
+    "win-hand-num": 3,
+    "type": "four of a kind",
+    "difficult": "hard"
+  },
+  {
+    "num": 89,
+    "hand1": ["k-diamond", "9-diamond"],
+    "hand2": ["10-clubs", "j-clubs"],
+    "hand3": ["6-heart", "7-heart"],
+    "flop": ["4-diamond", "7-diamond", "7-clubs"],
+    "turn": "4-clubs",
+    "river": "k-clubs",
+    "win-hand-struct": [
+      "7-clubs",
+      "7-diamond",
+      "7-heart",
+      "4-clubs",
+      "4-diamond"
+    ],
+    "win-hand-num": 3,
+    "type": "full house",
+    "difficult": "hard"
+  },
+  {
+    "num": 90,
+    "hand1": ["8-clubs", "9-diamond"],
+    "hand2": ["q-clubs", "2-clubs"],
+    "hand3": ["10-spades", "j-heart"],
+    "flop": ["k-clubs", "a-clubs", "q-clubs"],
+    "turn": "9-clubs",
+    "river": "2-clubs",
+    "win-hand-struct": ["a-clubs", "k-clubs", "q-clubs", "9-clubs", "2-clubs"],
+    "win-hand-num": 2,
+    "type": "high flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 91,
+    "hand1": ["a-spades", "7-spades"],
+    "hand2": ["k-heart", "k-diamond"],
+    "hand3": ["q-clubs", "q-heart"],
+    "flop": ["a-diamond", "q-spades", "5-diamond"],
+    "turn": "5-clubs",
+    "river": "k-spades",
+    "win-hand-struct": [
+      "k-spades",
+      "k-diamond",
+      "k-heart",
+      "5-clubs",
+      "5-diamond"
+    ],
+    "win-hand-num": 2,
+    "type": "full house",
+    "difficult": "easy"
+  },
+  {
+    "num": 92,
+    "hand1": ["3-diamond", "3-clubs"],
+    "hand2": ["7-diamond", "6-heart"],
+    "hand3": ["a-heart", "2-clubs"],
+    "flop": ["a-spades", "2-spades", "3-heart"],
+    "turn": "7-spades",
+    "river": "6-diamond",
+    "win-hand-struct": [
+      "3-heart",
+      "3-clubs",
+      "3-diamond",
+      "a-spades",
+      "7-spades"
+    ],
+    "win-hand-num": 1,
+    "type": "three of a kind",
+    "difficult": "easy"
+  },
+  {
+    "num": 93,
+    "hand1": ["10-heart", "10-diamond"],
+    "hand2": ["10-spades", "10-clubs"],
+    "hand3": ["j-spades", "j-clubs"],
+    "flop": ["a-diamond", "a-heart", "a-clubs"],
+    "turn": "j-heart",
+    "river": "j-diamond",
+    "win-hand-struct": [
+      "j-diamond",
+      "j-heart",
+      "j-clubs",
+      "j-spades",
+      "a-clubs"
+    ],
+    "win-hand-num": 3,
+    "type": "four of a kind",
+    "difficult": "hard"
+  },
+  {
+    "num": 94,
+    "hand1": ["a-spades", "q-heart"],
+    "hand2": ["a-diamond", "7-clubs"],
+    "hand3": ["a-clubs", "2-clubs"],
+    "flop": ["a-heart", "7-heart", "q-clubs"],
+    "turn": "2-diamond",
+    "river": "8-heart",
+    "win-hand-struct": ["a-heart", "a-spades", "q-clubs", "q-heart", "8-heart"],
+    "win-hand-num": 1,
+    "type": "two pair",
+    "difficult": "hard"
+  },
+  {
+    "num": 95,
+    "hand1": ["5-clubs", "6-clubs"],
+    "hand2": ["10-diamond", "j-diamond"],
+    "hand3": ["q-spades", "k-diamond"],
+    "flop": ["7-heart", "8-heart", "9-heart"],
+    "turn": "q-diamond",
+    "river": "k-clubs",
+    "win-hand-struct": [
+      "k-clubs",
+      "q-diamond",
+      "j-diamond",
+      "10-diamond",
+      "9-heart"
+    ],
+    "win-hand-num": 2,
+    "type": "high straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 96,
+    "hand1": ["j-heart", "9-heart"],
+    "hand2": ["8-clubs", "10-clubs"],
+    "hand3": ["k-clubs", "k-spades"],
+    "flop": ["9-clubs", "10-heart", "q-heart"],
+    "turn": "j-clubs",
+    "river": "8-spades",
+    "win-hand-struct": [
+      "k-spades",
+      "q-heart",
+      "j-clubs",
+      "10-heart",
+      "9-clubs"
+    ],
+    "win-hand-num": 3,
+    "type": "high straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 97,
+    "hand1": ["7-spades", "7-heart"],
+    "hand2": ["j-diamond", "q-clubs"],
+    "hand3": ["9-heart", "10-heart"],
+    "flop": ["8-heart", "7-clubs", "10-spades"],
+    "turn": "8-diamond",
+    "river": "q-heart",
+    "win-hand-struct": [
+      "7-clubs",
+      "7-heart",
+      "7-spades",
+      "8-diamond",
+      "8-heart"
+    ],
+    "win-hand-num": 1,
+    "type": "full house",
+    "difficult": "easy"
+  },
+  {
+    "num": 98,
+    "hand1": ["j-clubs", "4-diamond"],
+    "hand2": ["q-diamond", "8-spades"],
+    "hand3": ["k-clubs", "9-heart"],
+    "flop": ["7-clubs", "5-clubs", "2-heart"],
+    "turn": "10-diamond",
+    "river": "a-diamond",
+    "win-hand-struct": [
+      "a-diamond",
+      "k-clubs",
+      "10-diamond",
+      "9-heart",
+      "7-clubs"
+    ],
+    "win-hand-num": 3,
+    "type": "high card",
+    "difficult": "easy"
+  },
+  {
+    "num": 99,
+    "hand1": ["4-heart", "5-heart"],
+    "hand2": ["q-clubs", "q-diamond"],
+    "hand3": ["a-spades", "k-diamond"],
+    "flop": ["k-heart", "q-heart", "a-heart"],
+    "turn": "7-spades",
+    "river": "9-spades",
+    "win-hand-struct": ["a-heart", "k-heart", "q-heart", "5-heart", "4-heart"],
+    "win-hand-num": 1,
+    "type": "high flush",
+    "difficult": "easy"
+  },
+  {
+    "num": 100,
+    "hand1": ["j-clubs", "j-diamond"],
+    "hand2": ["a-diamond", "k-clubs"],
+    "hand3": ["j-heart", "j-spades"],
+    "flop": ["a-clubs", "k-spades", "9-heart"],
+    "turn": "10-heart",
+    "river": "10-diamond",
+    "win-hand-struct": [
+      "a-clubs",
+      "a-diamond",
+      "k-spades",
+      "k-clubs",
+      "10-diamond"
+    ],
+    "win-hand-num": 2,
+    "type": "two pair",
+    "difficult": "easy"
+  },
+  {
+    "num": 101,
+    "hand1": ["a-heart", "k-spades"],
+    "hand2": ["9-clubs", "9-heart"],
+    "hand3": ["k-heart", "q-diamond"],
+    "flop": ["a-diamond", "7-diamond", "q-spades"],
+    "turn": "j-heart",
+    "river": "10-diamond",
+    "win-hand-struct": [
+      "a-diamond",
+      "k-spades",
+      "q-spades",
+      "j-heart",
+      "10-diamond"
+    ],
+    "win-hand-num": [1, 3],
+    "type": "split pot \"tie\", high straight",
+    "difficult": "easy"
+  },
+  {
+    "num": 102,
+    "hand1": ["4-spades", "5-clubs"],
+    "hand2": ["6-heart", "4-clubs"],
+    "hand3": ["10-diamond", "3-spades"],
+    "flop": ["7-diamond", "6-diamond", "8-spades"],
+    "turn": "6-clubs",
+    "river": "5-heart",
+    "win-hand-struct": [
+      "8-spades",
+      "7-diamond",
+      "6-clubs",
+      "5-heart",
+      "4-spades"
+    ],
+    "win-hand-num": [1, 3],
+    "type": "split pot \"tie\", straight",
+    "difficult": "hard"
+  },
+  {
+    "num": 103,
+    "hand1": ["7-spades", "a-spades"],
+    "hand2": ["6-spades", "a-heart"],
+    "hand3": ["8-clubs", "a-diamond"],
+    "flop": ["k-clubs", "k-diamond", "a-clubs"],
+    "turn": "10-spades",
+    "river": "5-spades",
+    "win-hand-struct": [
+      "a-clubs",
+      "a-spades",
+      "k-diamond",
+      "k-clubs",
+      "10-spades"
+    ],
+    "win-hand-num": [1, 2, 3],
+    "type": "split pot \"tie\", two pair",
+    "difficult": "hard"
+  },
+  {
+    "num": 104,
+    "hand1": ["3-spades", "5-spades"],
+    "hand2": ["a-clubs", "2-clubs"],
+    "hand3": ["a-heart", "7-heart"],
+    "flop": ["a-diamond", "9-heart", "9-spades"],
+    "turn": "j-diamond",
+    "river": "4-spades",
+    "win-hand-struct": [
+      "a-diamond",
+      "a-clubs",
+      "9-heart",
+      "9-spades",
+      "j-diamond"
+    ],
+    "win-hand-num": [2, 3],
+    "type": "split pot \"tie\", two pair",
+    "difficult": "hard"
+  },
+  {
+    "num": 105,
+    "hand1": ["j-spades", "7-heart"],
+    "hand2": ["j-diamond", "6-diamond"],
+    "hand3": ["9-heart", "10-clubs"],
+    "flop": ["j-heart", "j-clubs", "5-clubs"],
+    "turn": "5-spades",
+    "river": "a-diamond",
+    "win-hand-struct": [
+      "j-clubs",
+      "j-heart",
+      "j-spades",
+      "5-clubs",
+      "5-spades"
+    ],
+    "win-hand-num": [1, 2],
+    "type": "split pot \"tie\", full house",
+    "difficult": "hard"
+  },
+  {
+    "num": 106,
+    "hand1": ["j-clubs", "4-diamond"],
+    "hand2": ["a-clubs", "10-spades"],
+    "hand3": ["q-spades", "3-clubs"],
+    "flop": ["a-heart", "9-heart", "6-heart"],
+    "turn": "q-heart",
+    "river": "4-heart",
+    "win-hand-struct": ["a-heart", "q-heart", "9-heart", "6-heart", "4-heart"],
+    "win-hand-num": [1, 2, 3],
+    "type": "split pot \"tie\", high flush",
+    "difficult": "hard"
+  },
+  {
+    "num": 107,
+    "hand1": ["k-heart", "q-heart"],
+    "hand2": ["q-clubs", "8-spades"],
+    "hand3": ["7-spades", "8-diamond"],
+    "flop": ["3-diamond", "5-diamond", "9-spades"],
+    "turn": "10-heart",
+    "river": "j-diamond",
+    "win-hand-struct": [
+      "k-heart",
+      "q-heart",
+      "j-diamond",
+      "10-heart",
+      "9-spades"
+    ],
+    "win-hand-num": 1,
+    "type": "high straight",
+    "difficult": "hard"
+  },
+  {
+    "num": 108,
+    "hand1": ["2-spades", "5-spades"],
+    "hand2": ["q-diamond", "q-spades"],
+    "hand3": ["10-clubs", "9-diamond"],
+    "flop": ["6-heart", "4-spades", "j-clubs"],
+    "turn": "3-spades",
+    "river": "a-diamond",
+    "win-hand-struct": [
+      "6-heart",
+      "5-spades",
+      "4-spades",
+      "3-spades",
+      "2-spades"
+    ],
+    "win-hand-num": 1,
+    "type": "low straight",
+    "difficult": "hard"
+  },
+  {
+    "num": 109,
+    "hand1": ["8-spades", "q-heart"],
+    "hand2": ["9-diamond", "10-clubs"],
+    "hand3": ["a-clubs", "j-clubs"],
+    "flop": ["3-diamond", "6-spades", "4-clubs"],
+    "turn": "6-clubs",
+    "river": "2-clubs",
+    "win-hand-struct": ["a-clubs", "j-clubs", "6-clubs", "4-clubs", "2-clubs"],
+    "win-hand-num": 3,
+    "type": "flush, ace high",
+    "difficult": "easy"
+  },
+  {
+    "num": 110,
+    "hand1": ["6-diamond", "9-diamond"],
+    "hand2": ["2-spades", "4-spades"],
+    "hand3": ["4-diamond", "4-heart"],
+    "flop": ["3-clubs", "q-diamond", "2-diamond"],
+    "turn": "5-diamond",
+    "river": "7-diamond",
+    "win-hand-struct": [
+      "q-diamond",
+      "9-diamond",
+      "7-diamond",
+      "6-diamond",
+      "5-diamond"
+    ],
+    "win-hand-num": 1,
+    "type": "flush, queen high",
+    "difficult": "hard"
+  },
+  {
+    "num": 111,
+    "hand1": ["9-diamond", "10-clubs"],
+    "hand2": ["a-spades", "4-spades"],
+    "hand3": ["10-heart", "10-diamond"],
+    "flop": ["5-spades", "k-clubs", "2-spades"],
+    "turn": "q-diamond",
+    "river": "3-spades",
+    "win-hand-struct": [
+      "5-spades",
+      "4-spades",
+      "3-spades",
+      "2-spades",
+      "2-spades"
+    ],
+    "win-hand-num": 2,
+    "type": "low straight flush",
+    "difficult": "hard"
+  },
+  {
+    "num": 112,
+    "hand1": ["a-clubs", "j-diamond"],
+    "hand2": ["j-spades", "2-diamond"],
+    "hand3": ["7-diamond", "7-clubs"],
+    "flop": ["k-spades", "3-heart", "10-spades"],
+    "turn": "q-spades",
+    "river": "9-spades",
+    "win-hand-struct": [
+      "k-spades",
+      "q-spades",
+      "j-spades",
+      "10-spades",
+      "9-spades"
+    ],
+    "win-hand-num": 2,
+    "type": "high straight flush",
+    "difficult": "hard"
+  }
+]
