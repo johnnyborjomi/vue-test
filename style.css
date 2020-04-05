@@ -590,7 +590,6 @@ a:focus {
 .cards-game__holder {
   position: relative;
   padding: 14px 15px 20px;
-  background: #053e31 url(/images/which-hand-wins/cards-game-bg.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -651,12 +650,7 @@ a:focus {
   height: 200px;
   background-color: white;
   border-radius: 10px;
-}
-
-.cards-game__card-single {
-  height: 200px;
-  background-color: white;
-  border-radius: 10px;
+  color: black;
 }
 
 .cards-game__three-cards .cards-game__card {
@@ -729,6 +723,7 @@ a:focus {
   height: 120px;
   background-color: white;
   border-radius: 5px;
+  color: black;
 }
 
 .cards-game__hand-title {

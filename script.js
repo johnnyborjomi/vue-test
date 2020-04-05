@@ -116,40 +116,34 @@ function GameCountDown(node, count, toSubtract, endCallback) {
 }
 
 function GameFieldsRenderer(game, selector) {
-  this.url = [imagesPath, ".svg"];
+  this.url = ["", ".svg"];
   this.gameElem = game;
   this.flopElems = this.gameElem
     .querySelector(selector + "-flop")
-    .querySelectorAll("img");
-  this.turnElem = this.gameElem
-    .querySelector(selector + "-turn")
-    .querySelector("img");
-  this.riverElem = this.gameElem
-    .querySelector(selector + "-river")
-    .querySelector("img");
-  this.handsElems = this.gameElem
-    .querySelector(selector + "-hands")
-    .querySelectorAll("img");
+    .querySelectorAll(selector + "-flop-card");
+  this.turnElem = this.gameElem.querySelector(selector + "-turn-card");
+  this.riverElem = this.gameElem.querySelector(selector + "-river-card");
+  this.handsElems = this.gameElem.querySelectorAll(selector + "-hand-card");
   this.handType = this.gameElem.querySelector(selector + "-hand-type");
 
   this.renderItems = function (items, fields) {
     Array.prototype.map.call(
       items,
       function (item, index) {
-        item.src = this.buildSrc(fields[index]);
+        item.innerHTML = this.buildText(fields[index]);
       }.bind(this)
     );
   };
 
-  this.buildSrc = function (src) {
-    return this.url[0] + src + this.url[1];
+  this.buildText = function (text) {
+    return text;
   };
 
   this.render = function (fields) {
     this.handType.innerText = fields["type"];
     this.renderItems(this.flopElems, fields["flop"]);
-    this.turnElem.src = this.buildSrc(fields["turn"]);
-    this.riverElem.src = this.buildSrc(fields["river"]);
+    this.turnElem.innerHTML = this.buildText(fields["turn"]);
+    this.riverElem.innerHTML = this.buildText(fields["river"]);
     var dataHands = fields["hand1"].concat(fields["hand2"], fields["hand3"]);
     this.renderItems(this.handsElems, dataHands);
   };
@@ -285,7 +279,7 @@ function Game(selector, data) {
 }
 
 var game;
-fetch("/cards.json")
+fetch("cards.json")
   .then((data) => data.json())
   .then((data) => {
     console.log(data);

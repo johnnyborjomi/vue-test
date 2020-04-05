@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,400;1,600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
 
   <body>
@@ -36,39 +37,17 @@
               <div class="cards-game__content-frame">
                 <div class="cards-game__cards-holder">
                   <div class="cards-game__three-cards js-game-flop">
-                    <div class="cards-game__card">
-                      <img
-                        src=""
-                        alt="k-heart"
-                        class="cards-game__card-image"
-                      />
-                    </div>
-                    <div class="cards-game__card">
-                      <img
-                        src=""
-                        alt="10-clubs"
-                        class="cards-game__card-image"
-                      />
-                    </div>
-                    <div class="cards-game__card">
-                      <img
-                        src=""
-                        alt="q-clubs"
-                        class="cards-game__card-image"
-                      />
-                    </div>
+                    <div class="cards-game__card js-game-flop-card"></div>
+                    <div class="cards-game__card js-game-flop-card"></div>
+                    <div class="cards-game__card js-game-flop-card"></div>
                     <div class="cards-game__card-text">flop</div>
                   </div>
                   <div class="cards-game__card-single js-game-turn">
-                    <img src="" alt="9-heart" class="cards-game__card-image" />
+                    <div class="cards-game__card js-game-turn-card"></div>
                     <div class="cards-game__card-text">turn</div>
                   </div>
                   <div class="cards-game__card-single js-game-river">
-                    <img
-                      src=""
-                      alt="k-diamond"
-                      class="cards-game__card-image"
-                    />
+                    <div class="cards-game__card js-game-river-card"></div>
                     <div class="cards-game__card-text">River</div>
                   </div>
                 </div>
@@ -80,18 +59,10 @@
                     <h3 class="cards-game__hand-title">hand 1</h3>
                     <div class="cards-game__hand-cards">
                       <div class="cards-game__hand-card">
-                        <img
-                          src=""
-                          alt="a-heart"
-                          class="cards-game__hand-card-image"
-                        />
+                        <div class="js-game-hand-card"></div>
                       </div>
                       <div class="cards-game__hand-card">
-                        <img
-                          src=""
-                          alt="a-diamond"
-                          class="cards-game__hand-card-image"
-                        />
+                        <div class="js-game-hand-card"></div>
                       </div>
                     </div>
                   </div>
@@ -99,18 +70,10 @@
                     <h3 class="cards-game__hand-title">hand 2</h3>
                     <div class="cards-game__hand-cards">
                       <div class="cards-game__hand-card">
-                        <img
-                          src=""
-                          alt="j-diamond"
-                          class="cards-game__hand-card-image"
-                        />
+                        <div class="js-game-hand-card"></div>
                       </div>
                       <div class="cards-game__hand-card">
-                        <img
-                          src=""
-                          alt="8-heart"
-                          class="cards-game__hand-card-image"
-                        />
+                        <div class="js-game-hand-card"></div>
                       </div>
                     </div>
                   </div>
@@ -118,18 +81,10 @@
                     <h3 class="cards-game__hand-title">hand 3</h3>
                     <div class="cards-game__hand-cards">
                       <div class="cards-game__hand-card">
-                        <img
-                          src=""
-                          alt="9-clubs"
-                          class="cards-game__hand-card-image"
-                        />
+                        <div class="js-game-hand-card"></div>
                       </div>
                       <div class="cards-game__hand-card">
-                        <img
-                          src=""
-                          alt="10-heart"
-                          class="cards-game__hand-card-image"
-                        />
+                        <div class="js-game-hand-card"></div>
                       </div>
                     </div>
                   </div>
