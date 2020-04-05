@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link media="all" rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="wrapper" class="wrapper">
+      <main class="main">
+        <h1 class="title">Which hand wins?</h1>
+
+        <div id="game-holder" class="cards-game js-game">
+          <div class="cards-game__headline">
+            <span class="attempts"
+              >Total attempts: <b class="attempts-number js-game-attempts"></b
+            ></span>
+            <span class="win-streak"
+              >Win streak: <b class="win-streak-number js-game-win-streak"></b
+            ></span>
+            <span class="score">
+              Score to beat:
+              <b class="score-number js-game-score-to-beat"></b>
+            </span>
+          </div>
+          <div class="cards-game__holder cards-game__holder--w-timer">
+            <h2 class="cards-game__title js-game-hand-type">Texas hold’em</h2>
+            <div class="cards-game__content">
+              <div class="cards-game__content-frame">
+                <div class="cards-game__cards-holder">
+                  <div class="cards-game__three-cards js-game-flop">
+                    <div class="cards-game__card">
+                      <img
+                        src=""
+                        alt="k-heart"
+                        class="cards-game__card-image"
+                      />
+                    </div>
+                    <div class="cards-game__card">
+                      <img
+                        src=""
+                        alt="10-clubs"
+                        class="cards-game__card-image"
+                      />
+                    </div>
+                    <div class="cards-game__card">
+                      <img
+                        src=""
+                        alt="q-clubs"
+                        class="cards-game__card-image"
+                      />
+                    </div>
+                    <div class="cards-game__card-text">flop</div>
+                  </div>
+                  <div class="cards-game__card-single js-game-turn">
+                    <img src="" alt="9-heart" class="cards-game__card-image" />
+                    <div class="cards-game__card-text">turn</div>
+                  </div>
+                  <div class="cards-game__card-single js-game-river">
+                    <img
+                      src=""
+                      alt="k-diamond"
+                      class="cards-game__card-image"
+                    />
+                    <div class="cards-game__card-text">River</div>
+                  </div>
+                </div>
+                <div class="cards-game__hands js-game-hands">
+                  <div
+                    class="cards-game__hand cards-game__hand js-game-hand"
+                    data-hand="1"
+                  >
+                    <h3 class="cards-game__hand-title">hand 1</h3>
+                    <div class="cards-game__hand-cards">
+                      <div class="cards-game__hand-card">
+                        <img
+                          src=""
+                          alt="a-heart"
+                          class="cards-game__hand-card-image"
+                        />
+                      </div>
+                      <div class="cards-game__hand-card">
+                        <img
+                          src=""
+                          alt="a-diamond"
+                          class="cards-game__hand-card-image"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-game__hand js-game-hand" data-hand="2">
+                    <h3 class="cards-game__hand-title">hand 2</h3>
+                    <div class="cards-game__hand-cards">
+                      <div class="cards-game__hand-card">
+                        <img
+                          src=""
+                          alt="j-diamond"
+                          class="cards-game__hand-card-image"
+                        />
+                      </div>
+                      <div class="cards-game__hand-card">
+                        <img
+                          src=""
+                          alt="8-heart"
+                          class="cards-game__hand-card-image"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-game__hand js-game-hand" data-hand="3">
+                    <h3 class="cards-game__hand-title">hand 3</h3>
+                    <div class="cards-game__hand-cards">
+                      <div class="cards-game__hand-card">
+                        <img
+                          src=""
+                          alt="9-clubs"
+                          class="cards-game__hand-card-image"
+                        />
+                      </div>
+                      <div class="cards-game__hand-card">
+                        <img
+                          src=""
+                          alt="10-heart"
+                          class="cards-game__hand-card-image"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="js-game-timer timer">
+                  <div class="timer__frame timer__min js-timer-minutes">
+                    <span class="timer__value">0</span>
+                    <span class="timer__value">3</span>
+                  </div>
+                  <div class="timer__sep">:</div>
+                  <div class="timer__frame timer__sec js-timer-seconds">
+                    <span class="timer__value">5</span>
+                    <span class="timer__value">5</span>
+                  </div>
+                  <span class="timer__subtract js-timer-subtract">-5</span>
+                </div>
+              </div>
+            </div>
+            <div class="final-score js-game-over-overlay">
+              <div class="final-score__frame">
+                <h2 class="final-score__title">time is over</h2>
+                <strong class="final-score__status">0 - 10 = Beginner</strong>
+                <button class="button js-game-start-btn">
+                  <i class="icon-redo"></i> Try again
+                </button>
+                <strong class="final-score__text"
+                  >can your friends beat you?</strong
+                >
+                <div class="share open-close">
+                  <a
+                    href="#"
+                    class="share__link icon-link share__drop-opener opener"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="icon-share"></i
+                  ></a>
+                  <div class="share__drop js-copy-text-holder">
+                    <input
+                      class="share__input js-copy-text-input"
+                      type="text"
+                      readonly
+                      value="<iframe src='' width='100%' height='600' style='display:table;max-width:880px;margin:auto;width:800px;' frameBorder='0' scrolling='yes'></iframe>"
+                    />
+                    <span class="share__drop-text js-copy-text-btn"
+                      >copy code</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

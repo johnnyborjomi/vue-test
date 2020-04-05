@@ -1,0 +1,2021 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+   * Remove default margin.
+   */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+     ========================================================================== */
+
+/**
+   * Correct `block` display not defined for any HTML5 element in IE 8/9.
+   * Correct `block` display not defined for `details` or `summary` in IE 10/11
+   * and Firefox.
+   * Correct `block` display not defined for `main` in IE 11.
+   */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+   * 1. Correct `inline-block` display not defined in IE 8/9.
+   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+   */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+   * Address `[hidden]` styling not present in IE 8/9/10.
+   * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+   */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+     ========================================================================== */
+
+/**
+   * Remove the gray background color from active links in IE 10.
+   */
+
+a {
+  background-color: transparent;
+}
+
+/**
+   * Improve readability of focused elements when they are also in an
+   * active/hover state.
+   */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+     ========================================================================== */
+
+/**
+   * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+   */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+   * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+   */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+   * Address styling not present in Safari and Chrome.
+   */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+   * Address variable `h1` font-size and margin within `section` and `article`
+   * contexts in Firefox 4+, Safari, and Chrome.
+   */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+   * Address styling not present in IE 8/9.
+   */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+   * Address inconsistent and variable font size in all browsers.
+   */
+
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+   */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+     ========================================================================== */
+
+/**
+   * Remove border when inside `a` element in IE 8/9/10.
+   */
+
+img {
+  border: 0;
+}
+
+/**
+   * Correct overflow not hidden in IE 9/10/11.
+   */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+     ========================================================================== */
+
+/**
+   * Address margin not present in IE 8/9 and Safari.
+   */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+   * Address differences between Firefox and other browsers.
+   */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+   * Contain overflow in all browsers.
+   */
+
+pre {
+  overflow: auto;
+}
+
+/**
+   * Address odd `em`-unit font size rendering in all browsers.
+   */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+     ========================================================================== */
+
+/**
+   * Known limitation: by default, Chrome and Safari on OS X allow very limited
+   * styling of `select`, unless a `border` property is set.
+   */
+
+/**
+   * 1. Correct color not being inherited.
+   *    Known issue: affects color of disabled elements.
+   * 2. Correct font properties not being inherited.
+   * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+   * Address `overflow` set to `hidden` in IE 8/9/10/11.
+   */
+
+button {
+  overflow: visible;
+}
+
+/**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+   * Correct `select` style inheritance in Firefox.
+   */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+   *    and `video` controls.
+   * 2. Correct inability to style clickable `input` types in iOS.
+   * 3. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
+   */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+   * Re-set default cursor for disabled elements.
+   */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+   * Remove inner padding and border in Firefox 4+.
+   */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+
+input {
+  line-height: normal;
+}
+
+/**
+   * It's recommended that you don't attempt to style these elements.
+   * Firefox's implementation doesn't respect box-sizing, padding, or width.
+   *
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+   * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+   * `font-size` values of the `input`, it causes the cursor style of the
+   * decrement button to change from `default` to `text`.
+   */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+   */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box; /* 2 */
+}
+
+/**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * Define consistent border, margin, and padding.
+   */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+   * 1. Correct `color` not being inherited in IE 8/9/10/11.
+   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+   */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+   * Remove default vertical scrollbar in IE 8/9/10/11.
+   */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+   * Don't inherit the `font-weight` (applied by a rule above).
+   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+   */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+     ========================================================================== */
+
+/**
+   * Remove most spacing between table cells.
+   */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.ellipsis {
+  white-space: nowrap; /* 1 */
+  text-overflow: ellipsis; /* 2 */
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+}
+
+body {
+  color: #fff;
+  background: #0f1e21;
+  font: 14px/1.57 "Poppins", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.gm-style img {
+  max-width: none;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.h {
+  font-family: "Anton", sans-serif;
+  font-weight: bold;
+  margin: 0 0 0.5em;
+  color: #fff;
+}
+
+h1,
+.h1 {
+  font-size: 30px;
+}
+
+h2,
+.h2 {
+  font-size: 27px;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+}
+
+h4,
+.h4 {
+  font-size: 21px;
+}
+
+h5,
+.h5 {
+  font-size: 17px;
+}
+
+h6,
+.h6 {
+  font-size: 15px;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: #1685b9;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("/fonts/marketing/which-hand-wins/icomoon.eot?ehj4hv");
+  src: url("/fonts/marketing/which-hand-wins/icomoon.eot?ehj4hv#iefix")
+      format("embedded-opentype"),
+    url("/fonts/marketing/which-hand-wins/icomoon.ttf?ehj4hv")
+      format("truetype"),
+    url("/fonts/marketing/which-hand-wins/icomoon.woff?ehj4hv") format("woff"),
+    url("/fonts/marketing/which-hand-wins/icomoon.svg?ehj4hv#icomoon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1; /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-redo:before {
+  content: "\f01e";
+}
+
+.icon-back-to-top-mobile:before {
+  content: "\e900";
+}
+
+.icon-chevron:before {
+  content: "\e901";
+}
+
+.icon-left-arrow:before {
+  content: "\e902";
+}
+
+.icon-star:before {
+  content: "\e903";
+}
+
+.icon-facebook:before {
+  content: "\e904";
+}
+
+.icon-twitter:before {
+  content: "\e905";
+}
+
+.icon-share:before {
+  content: "\ea82";
+}
+
+.cards-game {
+  position: relative;
+  margin-bottom: 33px;
+  overflow: hidden;
+  text-align: center;
+  background: #05141a;
+  border-radius: 10px;
+}
+
+.cards-game.win .timer {
+  color: #00c62f;
+}
+
+.cards-game.lose .timer {
+  color: #f22850;
+}
+
+.cards-game__headline {
+  position: relative;
+  padding: 13px 12px 8px;
+  color: #c9c9c9;
+  background-color: #0c0e16;
+  border-radius: 10px 10px 0 0;
+}
+
+.cards-game__holder {
+  position: relative;
+  padding: 14px 15px 20px;
+  background: #053e31 url(/images/which-hand-wins/cards-game-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.cards-game__title {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.cards-game__content-frame {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cards-game__cards-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 210px;
+  margin: 0 auto;
+}
+
+.cards-game__card-single {
+  width: 27.5%;
+  padding: 0 0 10px;
+  margin: 0 7% 44px;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.cards-game__card-image {
+  display: block;
+}
+
+.cards-game__three-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 0 10px;
+  margin: 0 0 44px;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.cards-game__card {
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cards-game__card-single {
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cards-game__three-cards .cards-game__card {
+  width: 27.5%;
+  padding: 0;
+}
+
+.cards-game__card-text {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font: 16px/1.2 "Anton", sans-serif;
+  text-transform: uppercase;
+}
+
+.cards-game__hands {
+  margin: 0 0 20px;
+}
+
+.cards-game__hands.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.cards-game__hand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 10px 10px 29px;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  margin: 0 0 10px;
+}
+
+.cards-game__hand:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.cards-game__hand.green {
+  background: rgba(0, 157, 85, 0.5);
+}
+
+.cards-game__hand.red {
+  background: rgba(242, 40, 80, 0.5);
+}
+
+.cards-game__hand-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.cards-game__hand-card {
+  width: 49px;
+  margin: 0 4.4%;
+  height: 120px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.cards-game__hand-title {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 5px 0 0;
+  width: 57px;
+}
+
+.cards-game__message {
+  height: 8px;
+  padding: 14px 0 12px;
+}
+
+.button {
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 176px;
+  padding: 19px 20px;
+  margin: 0 0 59px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 2px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border: 0;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.button .icon-undo {
+  display: inline-block;
+  margin-right: 02px;
+  font-size: 14px;
+  -webkit-transform: rotate(260deg);
+  -ms-transform: rotate(260deg);
+  transform: rotate(260deg);
+}
+
+.share__link {
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  width: 53px;
+  height: 53px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  padding: 3px 3px 0 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.share__link:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+
+.js-open .share__link {
+  display: none;
+}
+
+.share__drop-holder {
+  position: relative;
+}
+
+.share__drop {
+  display: none;
+  max-width: 0;
+  overflow: hidden;
+  border-radius: 30px;
+  background-color: #1f1f1f;
+  font-size: 14px;
+  padding: 0;
+  -webkit-transition: max-width 0.3s ease-in-out;
+  transition: max-width 0.3s ease-in-out;
+}
+
+.js-open .share__drop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 217px;
+  max-width: 217px;
+}
+
+.share__input {
+  height: 100%;
+  background-color: #919191;
+  border: none;
+  height: 57px;
+  padding: 0 8px;
+  margin-right: 1px;
+  width: calc(100% - 105px);
+}
+
+.share__input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.share__drop-text {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding-left: 13px;
+}
+
+.attempts,
+.win-streak {
+  position: relative;
+  padding-right: 24px;
+  color: #c9c9c9;
+}
+
+.attempts::before,
+.win-streak::before {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  bottom: 0;
+  width: 1px;
+  height: 14px;
+  background-color: #9a9a9a;
+  opacity: 0.2;
+  content: "";
+}
+
+.win-streak {
+  padding-right: 0;
+}
+
+.win-streak::before {
+  display: none;
+}
+
+.attempts-number,
+.win-streak-number,
+.score-number {
+  color: #fff;
+}
+
+.score {
+  position: relative;
+  display: block;
+  padding-top: 4px;
+  color: #1685b9;
+}
+
+.score .icon-star {
+  margin-right: 2px;
+  color: #ff8b00;
+  font-size: 14px;
+}
+
+.final-score {
+  opacity: 0;
+  visibility: hidden;
+  left: -9999px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(15, 30, 33, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.final-score.active {
+  left: 0;
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.final-score__title {
+  width: 100%;
+  margin: 0 0 13px;
+  font: 36px/1 "Anton", sans-serif;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  color: #f22850;
+}
+
+.final-score__text {
+  font: 18px/1.2 "Anton", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 16px;
+}
+
+.final-score__status {
+  font: 16px/1.2 "Anton", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 26px;
+  display: block;
+}
+
+.timer {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1;
+  font-family: "Anton", sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.timer.green .timer__value {
+  color: #00c62f;
+}
+
+.timer.yellow .timer__value {
+  color: #ff8b00;
+}
+
+.timer.red .timer__value,
+.active .timer__value {
+  color: #f22850;
+}
+
+.timer.red .timer__subtract {
+  visibility: visible;
+  opacity: 1;
+}
+
+.timer__sep {
+  padding: 0 2px;
+}
+
+.timer__frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.timer__value {
+  display: block;
+  width: 22px;
+  height: 33px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  padding: 8px 4px;
+  margin: 0 2px;
+}
+
+.timer__subtract {
+  position: absolute;
+  font-size: 16px;
+  top: 10px;
+  right: -15px;
+  color: #f22850;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.footer {
+  background: #05141a;
+  padding: 40px 0 0;
+  color: #fff;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.footer__container {
+  width: 100%;
+  max-width: 1212px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer__frame {
+  margin: 0 0 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer__logo {
+  width: 165px;
+  display: block;
+  margin: 0 auto 31px;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.footer__text {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.footer__bottom {
+  border-top: 2px solid #1e2b31;
+  padding: 34px 0 14px;
+  margin: 33px 0 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer__bottom .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer__bottom a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0 20px;
+}
+
+.footer__bottom a:hover {
+  color: #1685b9;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer__link,
+.copy {
+  opacity: 0.6;
+  width: 100%;
+}
+
+.footer-block {
+  font-size: 14px;
+}
+
+.footer-block__title {
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  font-size: 16px;
+  margin: 0 0 23px;
+  letter-spacing: 0.64px;
+}
+
+.footer-block__links {
+  margin: 0 0 30px;
+}
+
+.footer-block__list {
+  list-style: none;
+  margin: 0 4px;
+  padding: 0;
+}
+
+.footer-block__item {
+  margin: 0 0 21px;
+}
+
+.footer-block__link {
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  display: block;
+  padding: 19px 3px;
+  border-radius: 30px;
+  background-color: #0664a0;
+  box-shadow: 0 10px 19px 1px rgba(171, 196, 234, 0.08);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  min-width: 4px;
+}
+
+.footer-block__link:hover {
+  background: #02273e;
+}
+
+.embed-block {
+  width: 100%;
+  box-shadow: 0 10px 19px 1px rgba(10, 15, 27, 0.32);
+  border-radius: 5px;
+  background-color: #161a25;
+  padding: 15px 14px 18px;
+  margin: 0 0 31px;
+}
+
+.embed-block__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0 0 5px;
+  display: block;
+}
+
+.embed-block__input-frame {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.embed-block__input-frame::before {
+  background-image: -webkit-linear-gradient(right, #fff 0%, #fff 100%);
+  background-image: linear-gradient(to left, #fff 0%, #fff 100%);
+}
+
+.embed-block__input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  box-sizing: border-box;
+  height: 37px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0;
+  background-color: #fff;
+  border: 0;
+  color: #2a3342;
+  font: 14px/1 "Poppins", sans-serif;
+  letter-spacing: 0.04em;
+  width: 100%;
+}
+
+.sources-drop {
+  width: 100%;
+  margin-bottom: 1px;
+  position: relative;
+  overflow-wrap: break-word;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sources-drop.js-open .sources-drop__opener {
+  border-bottom-color: #05141a;
+  border-radius: 30px 30px 0 0;
+}
+
+.sources-drop.js-open .sources-drop__opener::after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.sources-drop.js-open .sources-drop__drop-holder {
+  display: block;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.sources-drop__opener {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  top: auto;
+  color: #fff;
+  padding: 20px 37px 18px 36px;
+  position: relative;
+  z-index: 5;
+  text-decoration: none;
+}
+
+.sources-drop__opener::after {
+  display: block;
+  font-family: "icomoon";
+  content: "\e901";
+  font-size: 13px;
+  line-height: 1;
+  text-decoration: none;
+  margin: 1px 0 0 10px;
+}
+
+.sources-drop__opener:hover,
+.sources-drop__opener:focus {
+  text-decoration: none;
+}
+
+.sources-drop__drop-holder {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #05141a;
+  border: 1px solid #fff;
+  border-width: 0 1px 1px;
+  margin-top: -1px;
+  border-radius: 0 0 30px 30px;
+  max-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sources-drop__list {
+  margin: 0;
+  padding: 0 0 5px;
+  list-style: none;
+  text-align: left;
+}
+
+.sources-drop__item {
+  overflow: hidden;
+}
+
+.sources-drop__link {
+  color: #fff;
+  display: block;
+  padding: 1px 36px 2px;
+  text-decoration: none;
+}
+
+.sources-drop__link:hover {
+  color: #c9c9c9;
+}
+
+.top {
+  width: 46px;
+  height: 46px;
+  border-radius: 3px;
+  background-color: #fff;
+  position: fixed;
+  right: 15px;
+  bottom: 109px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.top::after {
+  font-family: "icomoon";
+  content: "\e900";
+  font-size: 12px;
+  line-height: 1;
+  color: #000;
+  position: absolute;
+  display: block;
+  text-indent: 0;
+  top: 17px;
+  left: 17px;
+}
+
+body {
+  background: #0f1e21 url(/images/which-hand-wins/body-bg.jpg) no-repeat;
+  background-size: 372% auto;
+  background-position: 45.5% -60px;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  max-width: 1212px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 28px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header__logo-link {
+  text-decoration: none;
+  width: 130px;
+  display: block;
+}
+
+.social-share-list {
+  list-style: none;
+  margin-bottom: 32px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.social-share-list--small {
+  position: static;
+  margin: -2px 0 0;
+  background: none;
+}
+
+.social-share-list--small .social-share-list__item {
+  margin-right: 16px;
+}
+
+.social-share-list--small .social-share-list__item:last-child {
+  margin-right: 0;
+}
+
+.social-share-list--small .social-share-list__link {
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
+}
+
+.social-share-list__item {
+  margin-right: 29px;
+}
+
+.social-share-list__item:last-child {
+  margin-right: 0;
+}
+
+.social-share-list__link {
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  width: 53px;
+  height: 53px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-share-list__link:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+
+.social-share-list__icon {
+  width: 16px;
+  height: 16px;
+}
+
+.main {
+  width: 100%;
+  max-width: 1212px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 28px 15px 38px;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font: 36px/1.29 "Anton", sans-serif;
+  margin-bottom: 16px;
+}
+
+.text-content {
+  margin: 0 auto 34px;
+  max-width: 480px;
+}
+
+.social-share-section {
+  padding-top: 34px;
+}
+
+.sub-title {
+  text-transform: uppercase;
+  font: 26px/1.2 "Anton", sans-serif;
+  margin: 0 0 24px;
+}
+
+.text-highlighted {
+  color: #1685b9;
+}
+
+.social-share-section {
+  padding-top: 34px;
+}
+
+@media (min-width: 768px) {
+  .cards-game {
+    margin-bottom: 50px;
+  }
+
+  .cards-game__headline {
+    padding: 22px 12px;
+  }
+
+  .cards-game__holder {
+    padding: 36px 4px 40px;
+  }
+
+  .cards-game__title {
+    margin-bottom: 31px;
+    font-size: 44px;
+  }
+
+  .cards-game__content-frame {
+    position: relative;
+    max-width: 690px;
+  }
+
+  .cards-game__cards-holder {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: none;
+  }
+
+  .cards-game__card-single {
+    width: 16.6%;
+    margin: 0 0 72px;
+    padding: 0 0 16px;
+  }
+
+  .cards-game__three-cards {
+    width: 54.8%;
+    margin: 0 0 72px;
+    padding: 0 0 16px;
+  }
+
+  .cards-game__three-cards .cards-game__card {
+    width: 30.333%;
+  }
+
+  .cards-game__three-cards .cards-game__card:not(:first-child) {
+    margin-left: 3%;
+  }
+
+  .cards-game__card-text {
+    font-size: 20px;
+    bottom: -36px;
+  }
+
+  .cards-game__hands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 0 40px;
+  }
+
+  .cards-game__hand {
+    display: block;
+    width: 31.2%;
+    padding: 20px 20px 25px;
+    margin: 0;
+  }
+
+  .cards-game__hand-card {
+    width: 39%;
+    margin: 0 5%;
+  }
+
+  .cards-game__hand-title {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .cards-game__message {
+    display: none;
+    height: auto;
+    padding: 0;
+  }
+
+  .button {
+    position: static;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    margin: 0 0 74px;
+    padding: 18px 20px;
+  }
+
+  .js-open .share__drop {
+    width: 478px;
+    min-width: 478px;
+  }
+
+  .attempts,
+  .win-streak {
+    padding-right: 37px;
+  }
+
+  .attempts::before,
+  .win-streak::before {
+    top: 0;
+    height: 23px;
+    right: 16px;
+  }
+
+  .win-streak {
+    padding-right: 37px;
+  }
+
+  .win-streak::before {
+    display: block;
+  }
+
+  .score {
+    display: inline-block;
+    padding-top: 0;
+  }
+
+  .score .icon-star {
+    font-size: 15px;
+    margin-right: 6px;
+  }
+
+  .final-score {
+    padding-bottom: 100px;
+  }
+
+  .final-score__title {
+    font-size: 60px;
+    letter-spacing: 0;
+    margin: 0 0 15px;
+  }
+
+  .final-score__text {
+    font-size: 28px;
+    margin: 0 0 20px;
+  }
+
+  .final-score__status {
+    font-size: 22px;
+    margin: 0 0 42px;
+  }
+
+  .timer {
+    font-size: 33px;
+  }
+
+  .timer__sep {
+    padding: 0 4px;
+  }
+
+  .timer__value {
+    margin: 0 4px;
+    padding: 14px 4px;
+    width: 40px;
+    height: 61px;
+    border-radius: 10px;
+  }
+
+  .timer__subtract {
+    font-size: 22px;
+    top: -30px;
+    right: 16px;
+  }
+
+  .footer {
+    padding: 37px 0 0;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .footer__container {
+    padding: 0 20px;
+  }
+
+  .footer__frame {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 0 40px;
+  }
+
+  .footer__logo {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    width: 200px;
+    margin: 3px 0 0;
+  }
+
+  .footer__bottom {
+    margin: 55px 0 0;
+    padding: 33px 0;
+  }
+
+  .footer__bottom .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .footer__bottom a {
+    margin: 0;
+  }
+
+  .footer__link,
+  .copy {
+    width: auto;
+  }
+
+  .footer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .footer-block__links {
+    margin: 0 0 30px;
+  }
+
+  .footer-block__list {
+    margin: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .footer-block__item {
+    margin: 0 0 0 11px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+
+  .footer-block__link {
+    padding: 18px;
+    white-space: nowrap;
+  }
+
+  .embed-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 270px;
+    padding: 12px;
+    margin: 0;
+  }
+
+  .embed-block__title {
+    padding: 0 20px 0 8px;
+  }
+
+  .sources-drop {
+    width: 200px;
+    margin-bottom: 0;
+    margin-left: 11px;
+  }
+
+  .sources-drop__opener {
+    padding: 18px 26px;
+  }
+
+  .sources-drop__opener::after {
+    margin: 0 0 0 15px;
+  }
+
+  .sources-drop__drop-holder {
+    max-height: 0;
+  }
+
+  .sources-drop__link {
+    padding: 1px 29px 22px;
+  }
+
+  .top {
+    text-indent: 0;
+    overflow: visible;
+    position: static;
+    background: none;
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+  }
+
+  .top::after {
+    display: inline-block;
+    position: static;
+    content: "\e902";
+    font-size: 12px;
+    margin-left: 6px;
+    vertical-align: top;
+    color: #fff;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.8;
+    background-size: 100% auto;
+    background-position: 0 0;
+  }
+
+  .header {
+    padding: 50px 20px;
+  }
+
+  .header__logo-link {
+    width: 200px;
+  }
+
+  .social-share-list {
+    margin-bottom: 25px;
+  }
+
+  .social-share-list--small {
+    position: fixed;
+    z-index: 99;
+    top: 44px;
+    right: 20px;
+  }
+
+  .social-share-list--small .social-share-list__link {
+    width: 57px;
+    height: 57px;
+    font-size: 16px;
+  }
+
+  .main {
+    padding: 38px 20px;
+  }
+
+  .title {
+    font-size: 70px;
+    margin-bottom: 26px;
+  }
+
+  .text-content {
+    margin: 0 auto 30px;
+  }
+
+  .social-share-section {
+    padding-top: 30px;
+  }
+
+  .sub-title {
+    margin: 0 0 30px;
+  }
+
+  .social-share-section {
+    padding-top: 3px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-game {
+    margin-bottom: 136px;
+  }
+
+  .cards-game__hand {
+    cursor: pointer;
+  }
+
+  .share__link {
+    width: 57px;
+    height: 57px;
+    font-size: 19px;
+  }
+
+  .final-score__title {
+    font-size: 70px;
+  }
+
+  .footer {
+    padding: 88px 0 0;
+  }
+
+  .footer__frame {
+    margin: 0 0 60px;
+  }
+
+  .footer-block__title {
+    margin: 2px 0 0;
+    text-align: left;
+  }
+
+  .footer-block__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 0 53px;
+  }
+
+  .footer-block__item {
+    margin: 0 0 0 30px;
+  }
+
+  .footer-block__link {
+    min-width: 9px;
+  }
+
+  .embed-block {
+    width: 370px;
+    padding: 10px 20px 10px 10px;
+  }
+
+  .embed-block__input {
+    padding: 5px 21px;
+  }
+
+  .sources-drop__opener {
+    padding: 24px 40px 22px 40px;
+  }
+
+  .sources-drop__link {
+    padding: 1px 40px 22px;
+  }
+
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+
+  .social-share-list {
+    margin-bottom: 50px;
+  }
+
+  .social-share-list__item {
+    margin-right: 60px;
+  }
+
+  .social-share-list__link {
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+  }
+
+  .main {
+    padding: 38px 20px 90px;
+  }
+
+  .text-content {
+    margin: 0 auto 66px;
+  }
+
+  .sub-title {
+    font-size: 44px;
+    margin: 0 0 52px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cards-game__content-frame {
+    max-width: 772px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sources-drop {
+    width: 260px;
+  }
+}
