@@ -18,12 +18,121 @@
       <main class="main">
         <h1 class="title">Which hand wins?</h1>
 
-        <div id="app" class="cards-game js-game">
-          <span v-bind:title="message">
-            Hover your mouse over me for a few seconds to see my dynamically
-            bound title!
-          </span>
-          <span v-if="seen">Now you see me</span>
+        <div id="app" class="cards-game" v-bind:class="gameStateClass">
+          <!-- HEADLINE -->
+          <div class="cards-game__headline">
+            <span class="attempts"
+              >Total attempts:
+              <b class="attempts-number">{{ attempts }}</b></span
+            >
+            <span class="win-streak"
+              >Win streak:
+              <b class="win-streak-number">{{ winStreak }}</b></span
+            >
+            <span class="score">
+              Score to beat:
+              <b class="score-number">{{ scoreToBeat }}</b>
+            </span>
+          </div>
+          <!-- HEADLINE -->
+          <!-- GAMEFIELD -->
+          <div class="cards-game__holder cards-game__holder--w-timer">
+            <h2 class="cards-game__title">Texas hold’em</h2>
+            <div class="cards-game__content">
+              <div class="cards-game__content-frame">
+                <div class="cards-game__cards-holder">
+                  <div class="cards-game__three-cards">
+                    <template v-if="quiz">
+                      <div
+                        class="cards-game__card"
+                        v-for="flop in quiz.flop"
+                        v-bind:key="flop"
+                        :inner-html.prop="flop | card"
+                      ></div>
+                    </template>
+                    <div class="cards-game__card-text">flop</div>
+                  </div>
+                  <div class="cards-game__card-single">
+                    <template v-if="quiz">
+                      <div
+                        class="cards-game__card"
+                        :inner-html.prop="quiz.turn | card"
+                      ></div>
+                    </template>
+                    <div class="cards-game__card-text">turn</div>
+                  </div>
+                  <div class="cards-game__card-single">
+                    <template v-if="quiz">
+                      <div
+                        class="cards-game__card"
+                        :inner-html.prop="quiz.river | card"
+                      ></div>
+                    </template>
+                    <div class="cards-game__card-text">River</div>
+                  </div>
+                </div>
+                <div class="cards-game__hands">
+                  <template v-if="quiz">
+                    <div
+                      v-for="(hand, index) in [quiz.hand1, quiz.hand2, quiz.hand3]"
+                      class="cards-game__hand cards-game__hand"
+                      v-bind:data-hand="index + 1"
+                      v-on:click="onClick"
+                      v-bind:class="{'green': (index + 1 == correctHand), 'red': (index + 1 == incorrectHand)}"
+                    >
+                      <h3 class="cards-game__hand-title">
+                        hand {{ index + 1 }}
+                      </h3>
+                      <div class="cards-game__hand-cards">
+                        <div class="cards-game__hand-card">
+                          <div :inner-html.prop="hand[0] | card"></div>
+                        </div>
+                        <div class="cards-game__hand-card">
+                          <div :inner-html.prop="hand[1] | card"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </template>
+                </div>
+                <div class="timer" :inner-html.prop="timer.count | time">
+                  <span class="timer__subtract">-5</span>
+                </div>
+              </div>
+            </div>
+            <div class="final-score">
+              <div class="final-score__frame">
+                <h2 class="final-score__title">time is over</h2>
+                <strong class="final-score__status">0 - 10 = Beginner</strong>
+                <button class="button">
+                  <i class="icon-redo"></i> Try again
+                </button>
+                <strong class="final-score__text"
+                  >can your friends beat you?</strong
+                >
+                <div class="share open-close">
+                  <a
+                    href="#"
+                    class="share__link icon-link share__drop-opener opener"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="icon-share"></i
+                  ></a>
+                  <div class="share__drop js-copy-text-holder">
+                    <input
+                      class="share__input js-copy-text-input"
+                      type="text"
+                      readonly
+                      value="<iframe src='' width='100%' height='600' style='display:table;max-width:880px;margin:auto;width:800px;' frameBorder='0' scrolling='yes'></iframe>"
+                    />
+                    <span class="share__drop-text js-copy-text-btn"
+                      >copy code</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- GAMEFIELD -->
         </div>
       </main>
     </div>

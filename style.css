@@ -1962,3 +1962,41 @@ body {
     width: 260px;
   }
 }
+
+.card-type {
+  text-transform: uppercase;
+  font-size: 42px;
+}
+
+.card-mast {
+  font-size: 42px;
+}
+
+.cards-game__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards-game__hand .card-type {
+  font-size: 30px;
+}
+
+.cards-game__hand .card-mast {
+  font-size: 30px;
+}
+
+.cards-game__hand-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.correct .timer {
+  color: green;
+}
+
+.incorrect .timer {
+  color: red;
+}
